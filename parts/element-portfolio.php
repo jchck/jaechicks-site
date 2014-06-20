@@ -21,6 +21,7 @@
 					
 			</div>
 			<div class="4u">
+				<?php get_template_part('portfolio/element', 'foodpedaler' ); ?>
 				<?php get_template_part('portfolio/element', 'webster' ); ?>
 				<?php get_template_part('portfolio/element', 'hello' ); ?>
 				<?php get_template_part('portfolio/element', 'befoundation' ); ?>
