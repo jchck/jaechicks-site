@@ -14,6 +14,7 @@
 				<?php get_template_part('portfolio/element', 'ywca' ); ?>
 			</div>
 			<div class="4u">
+				<?php get_template_part('portfolio/element', '2schae' ); ?>
 				<?php get_template_part('portfolio/element', 'dkr' ); ?>
 				<?php get_template_part('portfolio/element', 'citydiner' ); ?>
 				<?php get_template_part('portfolio/element', 'bouhasin' ); ?>
