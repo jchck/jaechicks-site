@@ -1,0 +1,17 @@
+.actions{
+	
+}
+.box{
+	background: #ffffff;
+	border-bottom: solid 1px #ccc;
+	.image-full{
+		position: relative;
+		width: auto;
+		transition: none;
+		padding: 0;
+		&:hover{
+			background: none;
+			border-radius: 0;
+		}
+	}
+}

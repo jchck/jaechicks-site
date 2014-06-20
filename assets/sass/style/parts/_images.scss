@@ -1,0 +1,13 @@
+.image-full{
+	display: block;
+	width: 100%;
+	margin: 0 0 2em 0;
+}
+.image{
+	display: inline-block;
+	outline: 0;
+	img{
+		display: block;
+		width: 100%;
+	}
+}
