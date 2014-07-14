@@ -1,29 +1,21 @@
-<?php get_header(); ?>
-<body>
-	<!-- Header -->
-	<div id="header" class="skel-panels-fixed">
-		<div class="top">
-			<!-- Logo -->
-			<?php get_template_part( 'parts/element', 'toplogo' ); ?>
-			<!-- Nav -->
-			<?php get_template_part('parts/element', 'nav' ); ?>						
-		</div>			
-		<div class="bottom">
-			<!-- Social Icons -->
-			<?php get_template_part('parts/element', 'social' ); ?>	
-		</div>		
-	</div>
-	<!-- Main -->
-	<div id="main">		
-		<!-- Intro -->
-		<?php get_template_part('parts/element', 'intro' ); ?>		
-		<!-- About Me -->
-		<?php get_template_part('parts/element','about' ); ?>					
-		<!-- Portfolio -->
-		<?php get_template_part('parts/element', 'portfolio' ); ?>		
-		<!-- The Process -->
-		<?php get_template_part('parts/element', 'process' ); ?>			
-		<!-- Contact -->
-		<?php get_template_part('parts/element', 'contact' ); ?>			
-	</div>
-<?php get_footer();?>
+<?php get_template_part('templates/page', 'header'); ?>
+
+<?php if (!have_posts()) : ?>
+  <div class="alert alert-warning">
+    <?php _e('Sorry, no results were found.', 'roots'); ?>
+  </div>
+  <?php get_search_form(); ?>
+<?php endif; ?>
+
+<?php while (have_posts()) : the_post(); ?>
+  <?php get_template_part('templates/content', get_post_format()); ?>
+<?php endwhile; ?>
+
+<?php if ($wp_query->max_num_pages > 1) : ?>
+  <nav class="post-nav">
+    <ul class="pager">
+      <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'roots')); ?></li>
+      <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'roots')); ?></li>
+    </ul>
+  </nav>
+<?php endif; ?>
