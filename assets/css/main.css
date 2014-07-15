@@ -6215,4 +6215,16 @@ figure.alignnone {
     margin-left: 10px;
   }
 }
+@media (min-width: 767px) {
+  .banner .navbar-nav {
+    float: none !important;
+    margin: 0 auto !important;
+    display: table;
+    table-layout: fixed;
+  }
+  .banner .navbar {
+    margin-bottom: 0 !important;
+    border: none !important;
+  }
+}
 /*# sourceMappingURL=main.css.map */

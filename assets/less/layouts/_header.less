@@ -1,1 +1,14 @@
-.banner { }
+.banner {
+	@media (min-width: @screen-xs-max){
+	    .navbar-nav{
+	        float:none !important;
+	        margin: 0 auto !important;
+	        display: table;
+	        table-layout: fixed;
+	    }
+	    .navbar{
+		    margin-bottom: 0 !important;
+		    border: none !important;
+	    }
+	}
+}
