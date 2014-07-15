@@ -12,8 +12,9 @@
     get_template_part('templates/header');
   ?>
 
-  <div class="bg">
-  </div>
+  <?php if (is_front_page()){ ?>
+    <div class="bg"></div>
+  <?php } ?>
 
   <div class="wrap container" role="document">
     <div class="content row">
