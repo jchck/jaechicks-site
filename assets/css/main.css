@@ -6238,4 +6238,17 @@ figure.alignnone {
           background-size: cover;
   width: 100%;
 }
+.bg .table {
+  height: 100%;
+  overflow: hidden;
+  display: table;
+  margin: 0;
+}
+.bg .table h1 {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+}
 /*# sourceMappingURL=main.css.map */

@@ -13,7 +13,11 @@
   ?>
 
   <?php if (is_front_page()){ ?>
-    <div class="bg"></div>
+    <div class="bg">
+      <div class="table">
+        <h1>Justin is Awesome</h1>
+      </div>
+    </div>
   <?php } ?>
 
   <div class="wrap container" role="document">
