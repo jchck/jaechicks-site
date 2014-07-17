@@ -15,7 +15,7 @@
   <?php if (is_front_page()){ ?>
     <div class="bg">
       <div class="table">
-        <h1>Justin is Awesome</h1>
+        <h1><?php get_template_part( 'templates/logo' ) ;?></h1>
       </div>
     </div>
   <?php } ?>
