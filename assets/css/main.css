@@ -6255,12 +6255,22 @@ figure.alignnone {
   display: table;
   margin: 0;
 }
-.bg .table h1 {
+.bg .table div {
   display: table-cell;
   position: relative;
   vertical-align: middle;
   text-align: center;
   margin: 0;
+}
+.bg .table ul {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+.bg .table ul > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .no-svg .logo {
   width: 378px;
