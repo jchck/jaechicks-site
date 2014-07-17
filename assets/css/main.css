@@ -6228,15 +6228,26 @@ figure.alignnone {
   }
 }
 .bg {
-  position: absolute;
   top: 0;
-  bottom: 0;
   right: 0;
-  z-index: 1;
-  background-position: center center;
+  bottom: 0;
+  left: 0;
+  display: block;
+  position: absolute;
   -webkit-background-size: cover cover;
           background-size: cover;
+  background-position: center center;
   width: 100%;
+}
+.bg:after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
 }
 .bg .table {
   height: 100%;
@@ -6250,5 +6261,10 @@ figure.alignnone {
   vertical-align: middle;
   text-align: center;
   margin: 0;
+}
+.no-svg .logo {
+  width: 378px;
+  height: 211px;
+  background-image: url('assets/img/jaechick-logo.png');
 }
 /*# sourceMappingURL=main.css.map */

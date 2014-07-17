@@ -1,3 +1,41 @@
+.bg{
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	position: absolute;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+
+	&:after{
+		content: "";
+		opacity: 0.5;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		z-index: -1;
+	}
+
+		.table{
+			height: 100%;
+			overflow: hidden;
+			display: table;
+			margin: 0;
+
+				h1{
+					display: table-cell;
+					position: relative;
+					vertical-align: middle;
+					text-align: center;
+					margin: 0;
+				}
+		}
+}
+
 .no-svg .logo{
 	width: 378px;
 	height: 211px;
