@@ -5,6 +5,7 @@
 
 			<ul>
 				<li>Biography</li>
+				<li>methodology</li>
 				<li>Portfolio</li>
 				<li>Notebook</li>
 				<li>Photography</li>
