@@ -1,4 +1,4 @@
-<header>
+<section id="header" class="header" data-speed="6" data-type="background">
 	<div class="bg">
 		<div class="table">
 		  <div>
@@ -9,4 +9,4 @@
 		  </div>
 		</div>
 	</div>
-</header>
+</section>

@@ -6227,14 +6227,17 @@ figure.alignnone {
     margin-left: 12px;
   }
 }
-header {
-  height: 500px;
+.header {
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
   position: relative;
+  background: url('/wp-content/themes/my-site/assets/img/bg/12.jpg') 50% 0 fixed;
 }
-header li:nth-of-type(6n+3) {
+.header li:nth-of-type(6n+3) {
   margin-right: 123px;
 }
-header li:nth-of-type(6n+4) {
+.header li:nth-of-type(6n+4) {
   margin-left: 123px;
 }
 .bg {
@@ -6243,18 +6246,7 @@ header li:nth-of-type(6n+4) {
   bottom: 0;
   left: 0;
   display: block;
-  position: absolute;
   width: 100%;
-}
-.bg:after {
-  content: "";
-  opacity: 0.5;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  z-index: -1;
 }
 .bg .table {
   height: 100%;
@@ -6323,5 +6315,16 @@ header li:nth-of-type(6n+4) {
   -webkit-background-size: cover cover;
           background-size: cover;
   background-position: center center;
+  position: absolute;
+}
+.home .bg:after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
 }
 /*# sourceMappingURL=main.css.map */

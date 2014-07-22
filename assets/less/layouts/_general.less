@@ -1,7 +1,10 @@
 // Nav & header styles
-header{
-	height: 500px;
+.header{
+	height: auto;
+	margin: 0 auto;
+	width: 100%;
 	position: relative;
+	background: url('/wp-content/themes/my-site/assets/img/bg/12.jpg') 50% 0 fixed;
 
 		li{
 			&:nth-of-type(6n+3){
@@ -18,19 +21,8 @@ header{
 	bottom: 0;
 	left: 0;
 	display: block;
-	position: absolute;
+	
 	width: 100%;
-
-	&:after{
-		content: "";
-		opacity: 0.5;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		position: absolute;
-		z-index: -1;
-	}
 
 		.table{
 			height: 100%;
