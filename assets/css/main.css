@@ -6198,6 +6198,9 @@ a:hover {
   text-decoration: none;
   border-bottom: none;
 }
+object {
+  pointer-events: none;
+}
 .gallery-row {
   padding: 12px 0;
 }
@@ -6223,6 +6226,10 @@ figure.alignnone {
     float: right;
     margin-left: 12px;
   }
+}
+.banner .logo {
+  width: 246px;
+  height: 137px;
 }
 .menu {
   text-transform: lowercase;
