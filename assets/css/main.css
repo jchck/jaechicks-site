@@ -6255,6 +6255,8 @@ figure.alignnone {
   right: 0;
   bottom: 0;
   left: 0;
+  display: block;
+  width: 100%;
 }
 .bg .table {
   height: 100%;
