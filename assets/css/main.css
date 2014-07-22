@@ -6189,6 +6189,14 @@ button.close {
     display: none !important;
   }
 }
+/**
+	Nothing in this file should be project spicific
+
+	First some mixins to mix it up
+**/
+/**
+	Now set some styles to go across the board
+**/
 a {
   -webkit-transition: all 0.2s ease-in-out;
        -o-transition: all 0.2s ease-in-out;
@@ -6228,11 +6236,9 @@ figure.alignnone {
   }
 }
 .header {
-  height: auto;
-  margin: 0 auto;
-  width: 100%;
-  position: relative;
-  background: url('/wp-content/themes/my-site/assets/img/bg/12.jpg') 50% 0 fixed;
+  background: url('/wp-content/themes/my-site/assets/img/bg/6.jpg') 50% 0 fixed;
+  background-position: 50% 0;
+  background-attachment: fixed;
 }
 .header li:nth-of-type(6n+3) {
   margin-right: 123px;
@@ -6245,8 +6251,6 @@ figure.alignnone {
   right: 0;
   bottom: 0;
   left: 0;
-  display: block;
-  width: 100%;
 }
 .bg .table {
   height: 100%;

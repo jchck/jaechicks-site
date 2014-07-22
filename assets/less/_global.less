@@ -1,6 +1,29 @@
+/**
+	Nothing in this file should be project spicific
+
+	First some mixins to mix it up
+**/
+
 .ease-in-out(@time) {
   transition: all @time ease-in-out;
 }
+
+.opacity-bg() {
+	&:after{
+		content: "";
+		opacity: 0.5;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		z-index: -1;
+	}
+}
+
+/**
+	Now set some styles to go across the board
+**/
 
 a{
 	.ease-in-out(.2s);
