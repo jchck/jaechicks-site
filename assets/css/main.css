@@ -6246,6 +6246,10 @@ figure.alignnone {
     display: none !important;
   }
 }
+.page .content {
+  max-width: 750px;
+  margin: 0 auto;
+}
 @media (min-width: 767px) {
   .banner .navbar-nav {
     float: none !important;
