@@ -6246,6 +6246,12 @@ figure.alignnone {
   color: #333333;
   border-bottom: none;
 }
+.nav li:nth-of-type(6n+3) {
+  margin-right: 123px;
+}
+.nav li:nth-of-type(6n+4) {
+  margin-left: 123px;
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar-brand {
     display: none !important;
