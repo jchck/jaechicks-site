@@ -1,7 +1,14 @@
 // Nav links
 .menu{
-	li a{
-		color: @gray-dark;
+	li {
+		.ease-in-out(.2s);
+		&:hover{
+			opacity: .3;
+		}
+		a{
+			color: @gray-dark;
+			border-bottom: none;
+		}	
 	}
 }
 

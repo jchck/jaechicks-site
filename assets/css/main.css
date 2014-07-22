@@ -6225,8 +6225,17 @@ figure.alignnone {
     margin-left: 12px;
   }
 }
+.menu li {
+  -webkit-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+.menu li:hover {
+  opacity: .3;
+}
 .menu li a {
   color: #333333;
+  border-bottom: none;
 }
 @media (min-width: 767px) {
   .banner .navbar-nav {
