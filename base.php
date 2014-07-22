@@ -9,7 +9,7 @@
   <?php if (!is_front_page()){ ?>
     <?php
       do_action('get_header');
-      get_template_part('templates/header');
+      get_template_part('templates/header', 'simple');
     ?>
   <?php } ?>
 
