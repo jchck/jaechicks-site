@@ -6215,6 +6215,9 @@ figure.alignnone {
     margin-left: 12px;
   }
 }
+.menu li a {
+  color: #333333;
+}
 @media (min-width: 767px) {
   .banner .navbar-nav {
     float: none !important;
