@@ -6249,6 +6249,17 @@ figure.alignnone {
     display: none !important;
   }
 }
+.table {
+  overflow: hidden;
+  display: table;
+  margin: 0;
+}
+.table div {
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  margin: 0;
+}
 .page .content {
   max-width: 750px;
   margin: 0 auto;
@@ -6289,16 +6300,9 @@ figure.alignnone {
 }
 .bg .table {
   height: 100%;
-  overflow: hidden;
-  display: table;
-  margin: 0;
 }
 .bg .table div {
-  display: table-cell;
-  position: relative;
   vertical-align: middle;
-  text-align: center;
-  margin: 0;
 }
 .bg .table ul {
   padding-left: 0;
