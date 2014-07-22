@@ -1,5 +1,12 @@
 <header class="banner navbar navbar-default navbar-static-top" role="banner">
   <div class="container">
+    
+    <div class="table">
+      <div>
+        <object type="image/svg+xml" data="<?php echo get_template_directory_uri() . '/assets/img/logo.svg' ?>" class="logo"></object>
+      </div>
+    </div>
+
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
