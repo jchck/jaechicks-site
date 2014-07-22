@@ -2,6 +2,15 @@
 header{
 	height: 500px;
 	position: relative;
+
+		li{
+			&:nth-of-type(6n+3){
+			margin-right: 123px;
+			}
+			&:nth-of-type(6n+4){
+			margin-left: 123px;
+			}
+		}
 }
 .bg{
 	top: 0;
@@ -55,21 +64,22 @@ header{
 		}	
 	}
 }
-.nav{
-	li{
-		&:nth-of-type(6n+3){
-			margin-right: 123px;
-		}
-		&:nth-of-type(6n+4){
-			margin-left: 123px;
-		}
-	}
-}
 
-.navbar-brand{
-	.hidden-md();
-	.hidden-lg();
-}
+// .nav{
+// 	li{
+// 		&:nth-of-type(6n+3){
+// 			margin-right: 123px;
+// 		}
+// 		&:nth-of-type(6n+4){
+// 			margin-left: 123px;
+// 		}
+// 	}
+// }
+
+// .navbar-brand{
+// 	.hidden-md();
+// 	.hidden-lg();
+// }
 
 .table{
 	overflow: hidden;

@@ -6231,6 +6231,12 @@ header {
   height: 500px;
   position: relative;
 }
+header li:nth-of-type(6n+3) {
+  margin-right: 123px;
+}
+header li:nth-of-type(6n+4) {
+  margin-left: 123px;
+}
 .bg {
   top: 0;
   right: 0;
@@ -6285,22 +6291,6 @@ header {
 .menu li a {
   color: #333333;
   border-bottom: none;
-}
-.nav li:nth-of-type(6n+3) {
-  margin-right: 123px;
-}
-.nav li:nth-of-type(6n+4) {
-  margin-left: 123px;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .navbar-brand {
-    display: none !important;
-  }
-}
-@media (min-width: 1200px) {
-  .navbar-brand {
-    display: none !important;
-  }
 }
 .table {
   overflow: hidden;
