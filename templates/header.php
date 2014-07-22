@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>/"></a>
+      <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>/">Navbar Brand!</a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
