@@ -6189,6 +6189,16 @@ button.close {
     display: none !important;
   }
 }
+a {
+  border-bottom: 1px dashed #27ae60;
+  -webkit-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
 .gallery-row {
   padding: 12px 0;
 }
