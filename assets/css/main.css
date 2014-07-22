@@ -6227,9 +6227,49 @@ figure.alignnone {
     margin-left: 12px;
   }
 }
-.banner .logo {
-  width: 246px;
-  height: 137px;
+header {
+  height: 500px;
+  position: relative;
+}
+.bg {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+.bg:after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+.bg .table {
+  height: 100%;
+}
+.bg .table div {
+  vertical-align: middle;
+}
+.bg .table ul {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+  margin-top: 12px;
+}
+.bg .table ul > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.bg .table ul > li {
+  padding-left: 7px;
+  padding-right: 7px;
 }
 .menu {
   text-transform: lowercase;
@@ -6289,52 +6329,9 @@ figure.alignnone {
     border: none !important;
   }
 }
-.bg {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  position: absolute;
+.home .bg {
   -webkit-background-size: cover cover;
           background-size: cover;
   background-position: center center;
-  width: 100%;
-}
-.bg:after {
-  content: "";
-  opacity: 0.5;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  z-index: -1;
-}
-.bg .table {
-  height: 100%;
-}
-.bg .table div {
-  vertical-align: middle;
-}
-.bg .table ul {
-  padding-left: 0;
-  list-style: none;
-  margin-left: -5px;
-  margin-top: 12px;
-}
-.bg .table ul > li {
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.bg .table ul > li {
-  padding-left: 7px;
-  padding-right: 7px;
-}
-.no-svg .logo {
-  width: 378px;
-  height: 211px;
-  background-image: url('assets/img/jaechick-logo.png');
 }
 /*# sourceMappingURL=main.css.map */
