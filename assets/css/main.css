@@ -6243,12 +6243,6 @@ header .bg {
 header .bg:after {
   background-attachment: fixed;
 }
-header li:nth-of-type(6n+3) {
-  margin-right: 123px;
-}
-header li:nth-of-type(6n+4) {
-  margin-left: 123px;
-}
 header .logo {
   width: 227px;
   height: 127px;
