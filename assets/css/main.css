@@ -6235,6 +6235,14 @@ figure.alignnone {
     margin-left: 12px;
   }
 }
+header .bg {
+  background-attachment: fixed;
+  height: 300px;
+  position: relative;
+}
+header .bg:after {
+  background-attachment: fixed;
+}
 header li:nth-of-type(6n+3) {
   margin-right: 123px;
 }
@@ -6244,14 +6252,6 @@ header li:nth-of-type(6n+4) {
 header .logo {
   width: 227px;
   height: 127px;
-}
-header .bg {
-  background-attachment: fixed;
-  height: 300px;
-  position: relative;
-}
-header .bg:after {
-  background-attachment: fixed;
 }
 .bg {
   top: 0;

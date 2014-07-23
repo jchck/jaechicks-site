@@ -1,5 +1,16 @@
 // Nav & header styles
 header{
+		.bg{
+			background-attachment: fixed;
+			height: 300px;
+			position: relative;
+				&:after{
+					background-attachment: fixed;
+				}
+			.table ul{
+				//margin-top: -99px
+			}
+		}
 		li{
 			&:nth-of-type(6n+3){
 			margin-right: 123px;
@@ -13,14 +24,7 @@ header{
 			width: 227px;
 			height: 127px;
 		}
-		.bg{
-			background-attachment: fixed;
-			height: 300px;
-			position: relative;
-				&:after{
-					background-attachment: fixed;
-				}
-		}
+
 }
 .bg{
 	top: 0;
