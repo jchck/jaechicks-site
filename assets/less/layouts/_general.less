@@ -1,12 +1,13 @@
 // Nav & header styles
-.header{
-	//height: auto;
+header{
+	//height: 300px;
 	//margin: 0 auto;
 	//width: 100%;
 	//position: relative;
-	background: url('/wp-content/themes/my-site/assets/img/bg/6.jpg') 50% 0 fixed;
-	background-position: 50% 0;
-	background-attachment: fixed;
+	//background: url('/wp-content/themes/my-site/assets/img/bg/6.jpg') fixed center center;
+	//background-size: cover;
+	//background-position: 50% 0;
+	//background-attachment: fixed;
 		li{
 			&:nth-of-type(6n+3){
 			margin-right: 123px;
@@ -20,6 +21,15 @@
 			width: 227px;
 			height: 127px;
 		}
+		.bg{
+			background-attachment: fixed;
+			//background-position: 50% 0;
+			height: 300px;
+			position: relative;
+				&:after{
+					background-attachment: fixed;
+				}
+		}
 }
 .bg{
 	top: 0;
@@ -27,8 +37,10 @@
 	bottom: 0;
 	left: 0;
 	display: block;
-	
 	width: 100%;
+	background-size: cover;
+	background-position: center center;
+	.opacity-bg();
 
 		.table{
 			height: 100%;
