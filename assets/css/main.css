@@ -5922,7 +5922,9 @@ button.close {
 .panel-body:before,
 .panel-body:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+.content-info:before,
+.content-info:after {
   content: " ";
   display: table;
 }
@@ -5940,7 +5942,8 @@ button.close {
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,
-.modal-footer:after {
+.modal-footer:after,
+.content-info:after {
   clear: both;
 }
 .center-block {
@@ -6330,6 +6333,57 @@ header .logo {
     margin-bottom: 0 !important;
     border: none !important;
   }
+}
+footer {
+  background: #222222;
+}
+.content-info {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .content-info {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .content-info {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .content-info {
+    width: 970px;
+  }
+}
+.content-info > .navbar-header,
+.content-info > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  .content-info > .navbar-header,
+  .content-info > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.foot-across {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .foot-across {
+    float: left;
+    width: 100%;
+  }
+}
+.foot-across p {
+  text-align: center;
 }
 .page-header h1 {
   text-align: center;
