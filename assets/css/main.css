@@ -6257,9 +6257,6 @@ header .logo {
   left: 0;
   display: block;
   width: 100%;
-  -webkit-background-size: cover cover;
-          background-size: cover;
-  background-position: center center;
 }
 .bg:after {
   content: "";
@@ -6270,6 +6267,10 @@ header .logo {
   left: 0;
   position: absolute;
   z-index: -1;
+}
+.bg.bg:after {
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 .bg .table {
   height: 100%;

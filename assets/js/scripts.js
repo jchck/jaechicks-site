@@ -2132,7 +2132,7 @@ $(window).focus(backgroundResize);
 backgroundResize();;// For random header background images
 // This approach was used in order to manipulate pseudo-elements
 var count = 15,
-	css = '.bg:after { background-image: url(/wp-content/themes/my-site/assets/img/bg/'+(Math.floor(Math.random()*(count))+1)+'.jpg); }',
+	css = '.bg:after { background: url(/wp-content/themes/my-site/assets/img/bg/'+(Math.floor(Math.random()*(count))+1)+'.jpg) no-repeat center center fixed; }',
 	head = document.head || document.getElementsByTagName('head')[0],
 	style = document.createElement('style');
 
