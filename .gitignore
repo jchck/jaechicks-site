@@ -7,3 +7,7 @@ node_modules
 # assets/js/*scripts*.js
 # assets/js/vendor/modernizr.min.js
 # assets/manifest.json
+
+/.DS_Store
+
+.gitignore
