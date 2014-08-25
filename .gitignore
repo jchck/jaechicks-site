@@ -11,3 +11,6 @@ node_modules
 /.DS_Store
 
 .gitignore
+
+/assets/.DS_Store
+/assets/fonts/.DS_Store
