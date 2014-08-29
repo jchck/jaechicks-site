@@ -2144,7 +2144,9 @@ if (style.styleSheet){
 }
 head.appendChild(style);
 
-;/* ========================================================================
+;$(document).ready(function(){
+	$("ul.list-inline li a").tooltip();
+});;/* ========================================================================
  * DOM-based Routing
  * Based on http://goo.gl/EUTi53 by Paul Irish
  *

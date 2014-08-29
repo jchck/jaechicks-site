@@ -3,7 +3,11 @@
 	<div class="content-info" role="contentinfo">
 	  <div class="row">
 	  	<div class="foot-across">
-	  		<p><i class="fa fa-linkedin"></i></p>
+	  		<ul class="list-inline">
+	  			<li><a href="https://www.linkedin.com/in/justinchick" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+	  			<li><a href="http://twitter.com/jaechick" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+	  			<li><a href="mailto:hey@justinchick.com" target="_blank" title="Email"><i class="fa fa-envelope"></i></a></li>
+	  		</ul>
 	  		<p><a href="<?php echo home_url(); ?>">Made in STL</a></p>
 	  	</div>
 	  </div>
