@@ -3,6 +3,7 @@
 	<div class="content-info" role="contentinfo">
 	  <div class="row">
 	  	<div class="foot-across">
+	  		<p><i class="fa fa-linkedin"></i></p>
 	  		<p><a href="<?php echo home_url(); ?>">Made in STL</a></p>
 	  	</div>
 	  </div>
