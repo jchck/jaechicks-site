@@ -8078,6 +8078,8 @@ footer {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 @media (min-width: 768px) {
   .foot-across {
@@ -8087,6 +8089,8 @@ footer {
 }
 .foot-across p {
   text-align: center;
+  margin-bottom: 0;
+  font-size: 15px;
 }
 .foot-across .list-inline {
   text-align: center;
