@@ -6399,4 +6399,8 @@ footer {
 .home .bg {
   position: absolute;
 }
+.home .bg .logo {
+  height: 211px;
+  width: 378px;
+}
 /*# sourceMappingURL=main.css.map */
