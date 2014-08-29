@@ -3,7 +3,7 @@
 	<div class="content-info" role="contentinfo">
 	  <div class="row">
 	  	<div class="foot-across">
-	  		<p>Made with love in STL</p>
+	  		<p><a href="<?php echo home_url(); ?>">Made in STL</a></p>
 	  	</div>
 	  </div>
 	</div>
