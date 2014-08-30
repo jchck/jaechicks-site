@@ -6,5 +6,38 @@
 
 	h1{
 		text-align: center;
+
+			&:before,
+			&:after{
+				color: lighten(@text-color, 62%);
+				.ease-in-out(.5s);
+			}
+
+			&:before{
+				content: '\00ab';
+				margin-right: 25px;
+			}
+
+			&:after{
+				content: '\00bb';
+				margin-left: 25px;
+			}
+	}
+}
+
+main:hover{
+	h1{
+		&:before,
+		&:after{
+			color: lighten(@text-color, 33%);
+		}
+
+		&:before{
+			margin-right: 5px;
+		}
+
+		&:after{
+			margin-left: 5px;
+		}
 	}
 }

@@ -8108,6 +8108,31 @@ footer {
 .page-header h1 {
   text-align: center;
 }
+.page-header h1:before,
+.page-header h1:after {
+  color: #efefef;
+  -webkit-transition: all 0.5s ease-in-out;
+       -o-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+}
+.page-header h1:before {
+  content: '\00ab';
+  margin-right: 25px;
+}
+.page-header h1:after {
+  content: '\00bb';
+  margin-left: 25px;
+}
+main:hover h1:before,
+main:hover h1:after {
+  color: #a5a5a5;
+}
+main:hover h1:before {
+  margin-right: 5px;
+}
+main:hover h1:after {
+  margin-left: 5px;
+}
 .home .bg {
   position: absolute;
 }
