@@ -1,39 +1,10 @@
 .page-header{
-	&:after{
-		content: '';
-		border-bottom: 1px solid @text-color;
-		position: absolute;
-		width: 106%;
-		left: -3%;
-		display: block;
-	}
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+	background-position: 0 90%;
+	background-image: linear-gradient(left, @body-bg 0%, @text-color 50%, @body-bg 100%);
 
 	h1{
 		text-align: center;
-
-			// &:before{
-			// 	content: '\2f\2f';
-			// 	color: @text-color;
-			// 	display: inline-block;
-			// 	position: absolute;
-			// 	font-size: 12px;
-			// 	line-height: 12px;
-			// 	font-family: @font-family-sans-serif;
-			// 	bottom: -7px;
-			// 	left: 0;
-			// 	right: 0;
-			// 	text-align: center;
-			// }
-
-			// &:after{
-			// 	content: '';
-			// 	display: block;
-			// 	border-bottom: 1px solid @text-color;
-			// 	position: absolute;
-			// 	bottom: -2px;
-			// 	left: 42.5%;
-			// 	width: 15%;
-			// 	height: 0;
-			// }
 	}
 }
