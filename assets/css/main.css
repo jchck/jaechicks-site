@@ -8097,6 +8097,30 @@ footer {
 }
 .page-header h1 {
   text-align: center;
+  position: relative;
+}
+.page-header h1:before {
+  content: '\2f\2f';
+  color: #515151;
+  display: inline-block;
+  position: absolute;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "gotham_lightregular", Helvetica, Arial, sans-serif;
+  bottom: -7px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.page-header h1:after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid #515151;
+  position: absolute;
+  bottom: -2px;
+  left: 42.5%;
+  width: 15%;
+  height: 0;
 }
 .home .bg {
   position: absolute;
