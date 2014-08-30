@@ -8100,10 +8100,10 @@ footer {
           background-size: 100% 1px;
   background-repeat: no-repeat;
   background-position: 0 90%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(50%, #515151), to(#ffffff));
-  background-image: -webkit-linear-gradient(left, #ffffff 0%, #515151 50%, #ffffff 100%);
-  background-image: -o-linear-gradient(left, #ffffff 0%, #515151 50%, #ffffff 100%);
-  background-image: linear-gradient(left, #ffffff 0%, #515151 50%, #ffffff 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(50%, #a5a5a5), to(#ffffff));
+  background-image: -webkit-linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
+  background-image: -o-linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
+  background-image: linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
 }
 .page-header h1 {
   text-align: center;
