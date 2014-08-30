@@ -8123,6 +8123,9 @@ footer {
   content: '\00bb';
   margin-left: 25px;
 }
+main {
+  margin-bottom: 30px;
+}
 main:hover h1:before,
 main:hover h1:after {
   color: #a5a5a5;
@@ -8132,6 +8135,9 @@ main:hover h1:before {
 }
 main:hover h1:after {
   margin-left: 5px;
+}
+main p:last-child {
+  margin-bottom: 0;
 }
 .home .bg {
   position: absolute;

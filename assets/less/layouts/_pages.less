@@ -25,19 +25,28 @@
 	}
 }
 
-main:hover{
-	h1{
-		&:before,
-		&:after{
-			color: lighten(@text-color, 33%);
-		}
+main{
+	&:hover{
 
-		&:before{
-			margin-right: 5px;
-		}
+		h1{
+			&:before,
+			&:after{
+				color: lighten(@text-color, 33%);
+			}
 
-		&:after{
-			margin-left: 5px;
+			&:before{
+				margin-right: 5px;
+			}
+
+			&:after{
+				margin-left: 5px;
+			}
 		}
+	}
+
+	margin-bottom: 30px;
+
+	p:last-child{
+		margin-bottom: 0;
 	}
 }
