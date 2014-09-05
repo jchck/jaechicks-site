@@ -16,3 +16,6 @@ node_modules
 /assets/fonts/.DS_Store
 
 /assets/vendor/.DS_Store
+
+/assets/js/.DS_Store
+/assets/js/vendor/.DS_Store
