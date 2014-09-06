@@ -8038,7 +8038,7 @@ header .logo {
   text-align: center;
   margin: 0;
 }
-.page .content {
+.content {
   max-width: 750px;
   margin: 0 auto;
 }
@@ -8227,5 +8227,15 @@ div.notebook {
   background-image: -webkit-linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
   background-image: -o-linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
   background-image: linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
+}
+.hentry time {
+  display: block;
+  text-align: center;
+}
+.hentry .byline {
+  /* not inluded */
+}
+.hentry footer {
+  background: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
