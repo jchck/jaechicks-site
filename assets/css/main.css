@@ -8233,17 +8233,32 @@ div.notebook {
   text-align: center;
   font-size: 15px;
 }
-.hentry .byline {
-  /* not inluded */
-}
 .hentry footer {
   background: #ffffff;
   margin-top: 28px;
 }
-.hentry footer:after {
-  content: '###';
+.hentry footer span {
   display: block;
   text-align: center;
+  opacity: .1;
+  -webkit-transition: all 0.5s ease-in-out;
+       -o-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+}
+.hentry footer span:before,
+.hentry footer span:after {
+  opacity: .2;
+  -webkit-transition: all 0.5s ease-in-out;
+       -o-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+}
+.hentry footer span:before {
+  content: '#';
+  margin-right: 25px;
+}
+.hentry footer span:after {
+  content: '#';
+  margin-left: 25px;
 }
 .hentry footer p {
   margin: 0;
@@ -8259,5 +8274,18 @@ div.notebook {
   background-image: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 100%);
   background-image: -o-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 100%);
   background-image: linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 100%);
+}
+.hentry footer:hover span {
+  opacity: 1;
+}
+.hentry footer:hover span:before,
+.hentry footer:hover span:after {
+  opacity: 1;
+}
+.hentry footer:hover span:before {
+  margin-right: 5px;
+}
+.hentry footer:hover span:after {
+  margin-left: 5px;
 }
 /*# sourceMappingURL=main.css.map */

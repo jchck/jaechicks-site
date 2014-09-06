@@ -5,7 +5,7 @@
 	font-size: 15px;
 }
 
-.hentry .byline { /* not inluded */ }
+.hentry .byline {  }
 
 .hentry .entry-content {
 }
@@ -14,10 +14,24 @@
 	background: @body-bg;
 	margin-top: @line-height-computed;
 
-		&:after{
-			content: '###';
+		span{
 			display: block;
 			text-align: center;
+			opacity: .1;
+			.ease-in-out(.5s);
+			&:before,
+			&:after{
+				opacity: .2;
+				.ease-in-out(.5s);
+			}
+			&:before{
+				content: '#';
+				margin-right: 25px;
+			}
+			&:after{
+				content: '#';
+				margin-left: 25px;
+			}
 		}
 
 	p{
@@ -28,5 +42,21 @@
 			a{
 				.border-bottom-gradient(@body-bg);
 			}
+	}
+
+	&:hover{
+		span{
+			opacity: 1;
+			&:before,
+			&:after{
+				opacity: 1;
+			}
+			&:before{
+				margin-right: 5px;
+			}
+			&:after{
+				margin-left: 5px;
+			}
+		}
 	}
 }
