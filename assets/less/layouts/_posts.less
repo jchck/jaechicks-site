@@ -3,8 +3,19 @@
 	display: block;
 	text-align: center;
 }
+
 .hentry .byline { /* not inluded */ }
-.hentry .entry-content { }
+
+.hentry .entry-content {
+}
+
 .hentry footer {
 	background: @body-bg;
+	margin-top: @line-height-computed;
+
+		&:after{
+			content: '###';
+			display: block;
+			text-align: center;
+		}
 }

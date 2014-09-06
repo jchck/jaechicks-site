@@ -8237,5 +8237,11 @@ div.notebook {
 }
 .hentry footer {
   background: #ffffff;
+  margin-top: 28px;
+}
+.hentry footer:after {
+  content: '###';
+  display: block;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
