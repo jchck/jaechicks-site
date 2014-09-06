@@ -8231,6 +8231,7 @@ div.notebook {
 .hentry time {
   display: block;
   text-align: center;
+  font-size: 15px;
 }
 .hentry .byline {
   /* not inluded */
@@ -8243,5 +8244,20 @@ div.notebook {
   content: '###';
   display: block;
   text-align: center;
+}
+.hentry footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+}
+.hentry footer p a {
+  -webkit-background-size: 100% 1px;
+          background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(0%, #ffffff), color-stop(50%, #ffffff), to(#ffffff));
+  background-image: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 100%);
+  background-image: -o-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 100%);
+  background-image: linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 100%);
 }
 /*# sourceMappingURL=main.css.map */
