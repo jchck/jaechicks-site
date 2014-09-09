@@ -23,6 +23,7 @@ $roots_includes = array(
   'lib/scripts.php',         // Scripts and stylesheets
   'lib/extras.php',          // Custom functions
   'lib/cpt.php',             // Register custom post types for portfolio
+  'lib/ot.php',              // OptionTree attached here
 );
 
 foreach ($roots_includes as $file) {
