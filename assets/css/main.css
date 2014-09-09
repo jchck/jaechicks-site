@@ -8463,6 +8463,16 @@ div.notebook {
 }
 .page-template-template-contact-php .list-inline {
   text-align: center;
+  margin-bottom: 28px;
+  padding-bottom: 27px;
+  -webkit-background-size: 100% 1px;
+          background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(0%, #ffffff), color-stop(50%, #a5a5a5), to(#ffffff));
+  background-image: -webkit-linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
+  background-image: -o-linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
+  background-image: linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
 }
 .hentry time {
   display: block;
@@ -8506,7 +8516,7 @@ div.notebook {
           background-size: 100% 1px;
   background-repeat: no-repeat;
   background-position: 0 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(0%, #ffffff), color-stop(50%, #ffffff), to(#ffffff));
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(50%, #ffffff), to(#ffffff));
   background-image: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 100%);
   background-image: -o-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 100%);
   background-image: linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 100%);
