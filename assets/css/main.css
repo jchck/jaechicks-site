@@ -8461,6 +8461,9 @@ div.notebook {
   background-image: -o-linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
   background-image: linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
 }
+.page-template-template-contact-php .list-inline {
+  text-align: center;
+}
 .hentry time {
   display: block;
   text-align: center;
