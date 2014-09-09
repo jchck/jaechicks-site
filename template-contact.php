@@ -11,7 +11,7 @@ Template Name: Contact Template
 			<ul class="list-inline">
 				<li><a class="btn btn-primary" href="http://twitter.com/jaechick" target="_blank">@jaechick</a></li>
 				<li><a class="btn btn-primary" href="mailto:hey@justinchick.com" target="_blank">hey [at] justinchick.com</a></li>
-				<li><a class="btn btn-primary" href="tel:13144883200" target="_blank">314-488-3200</a></li>
+				<li><a class="btn btn-primary" href="tel:13144883200" target="_blank">(314) 488-3200</a></li>
 			</ul>
 		</div>
 	</div>
