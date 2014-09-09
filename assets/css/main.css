@@ -8143,6 +8143,9 @@ fieldset[disabled] .gform_button.active {
 #gforms_confirmation_message > p + p {
   margin-top: 5px;
 }
+.gform_footer {
+  text-align: center;
+}
 .gallery-row {
   padding: 14px 0;
 }
