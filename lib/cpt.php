@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
 * Registers a new post type
 * @uses $wp_post_types Inserts new post type object into the list
@@ -46,8 +48,7 @@ function portfolio() {
 		'capability_type'     => 'post',
 		'supports'            => array(
 			'title', 'editor', 'thumbnail',
-			'excerpt','custom-fields',
-			'revisions', 'post-formats'
+			'excerpt', 'revisions'
 			)
 	);
 
