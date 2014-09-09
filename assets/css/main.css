@@ -8349,7 +8349,7 @@ footer {
   text-align: center;
 }
 .page-header,
-.hentry header {
+.hentry header.page-heade {
   -webkit-background-size: 100% 1px;
           background-size: 100% 1px;
   background-repeat: no-repeat;
@@ -8360,25 +8360,25 @@ footer {
   background-image: linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
 }
 .page-header h1,
-.hentry header h1 {
+.hentry header.page-heade h1 {
   text-align: center;
 }
 .page-header h1:before,
-.hentry header h1:before,
+.hentry header.page-heade h1:before,
 .page-header h1:after,
-.hentry header h1:after {
+.hentry header.page-heade h1:after {
   color: #efefef;
   -webkit-transition: all 0.5s ease-in-out;
        -o-transition: all 0.5s ease-in-out;
           transition: all 0.5s ease-in-out;
 }
 .page-header h1:before,
-.hentry header h1:before {
+.hentry header.page-heade h1:before {
   content: '\00ab';
   margin-right: 25px;
 }
 .page-header h1:after,
-.hentry header h1:after {
+.hentry header.page-heade h1:after {
   content: '\00bb';
   margin-left: 25px;
 }
@@ -8493,24 +8493,16 @@ body.post-type-archive-portfolio .content article.first h5:before {
   display: block;
   margin-bottom: 14px;
 }
-body.post-type-archive-friends_project,
-body.single-friends_project,
+body.single-portfolio,
 body.post-type-archive-portfolio {
   height: 100%;
   width: 100%;
 }
-body.post-type-archive-friends_project .navbar-collapse,
-body.single-friends_project .navbar-collapse,
+body.single-portfolio .navbar-collapse,
 body.post-type-archive-portfolio .navbar-collapse {
   border: none;
 }
-body.post-type-archive-friends_project .content,
-body.single-friends_project .content,
-body.post-type-archive-portfolio .content {
-  max-width: 100%;
-}
-body.post-type-archive-friends_project .content article,
-body.single-friends_project .content article,
+body.single-portfolio .content article,
 body.post-type-archive-portfolio .content article {
   border-bottom: 0px;
   margin-bottom: 0px;
@@ -8518,32 +8510,27 @@ body.post-type-archive-portfolio .content article {
   padding-bottom: 10px;
   padding-right: 5px;
 }
-body.post-type-archive-friends_project .content article.first,
-body.single-friends_project .content article.first,
+body.single-portfolio .content article.first,
 body.post-type-archive-portfolio .content article.first {
   padding-top: 10px;
   padding-right: 5px;
   padding-left: 5px;
 }
-body.post-type-archive-friends_project .content figure,
-body.single-friends_project .content figure,
+body.single-portfolio .content figure,
 body.post-type-archive-portfolio .content figure {
   position: relative;
 }
-body.post-type-archive-friends_project .content figure .fluidbox,
-body.single-friends_project .content figure .fluidbox,
+body.single-portfolio .content figure .fluidbox,
 body.post-type-archive-portfolio .content figure .fluidbox {
   display: block;
   width: 100%;
   border-bottom: none;
 }
-body.post-type-archive-friends_project .content figure img,
-body.single-friends_project .content figure img,
+body.single-portfolio .content figure img,
 body.post-type-archive-portfolio .content figure img {
   margin-bottom: 0;
 }
-body.post-type-archive-friends_project .content figure figcaption,
-body.single-friends_project .content figure figcaption,
+body.single-portfolio .content figure figcaption,
 body.post-type-archive-portfolio .content figure figcaption {
   position: absolute;
   top: 0;
@@ -8559,8 +8546,7 @@ body.post-type-archive-portfolio .content figure figcaption {
   z-index: 991;
   pointer-events: none;
 }
-body.post-type-archive-friends_project .content figure figcaption header,
-body.single-friends_project .content figure figcaption header,
+body.single-portfolio .content figure figcaption header,
 body.post-type-archive-portfolio .content figure figcaption header {
   position: absolute;
   top: 50%;
@@ -8572,18 +8558,17 @@ body.post-type-archive-portfolio .content figure figcaption header {
   padding: 0 18%;
   width: 100%;
 }
-body.post-type-archive-friends_project .content figure figcaption header h2 a,
-body.single-friends_project .content figure figcaption header h2 a,
-body.post-type-archive-portfolio .content figure figcaption header h2 a {
+body.single-portfolio .content figure figcaption header h2 a,
+body.post-type-archive-portfolio .content figure figcaption header h2 a,
+body.single-portfolio .content figure figcaption header h3 a,
+body.post-type-archive-portfolio .content figure figcaption header h3 a {
   color: #ffffff;
 }
-body.post-type-archive-friends_project .content figure:hover a:not(.fluidbox-opened) + figcaption,
-body.single-friends_project .content figure:hover a:not(.fluidbox-opened) + figcaption,
+body.single-portfolio .content figure:hover a:not(.fluidbox-opened) + figcaption,
 body.post-type-archive-portfolio .content figure:hover a:not(.fluidbox-opened) + figcaption {
   opacity: 1;
 }
-body.post-type-archive-friends_project .content img,
-body.single-friends_project .content img,
+body.single-portfolio .content img,
 body.post-type-archive-portfolio .content img {
   margin-left: auto;
   margin-right: auto;
@@ -8591,8 +8576,7 @@ body.post-type-archive-portfolio .content img {
   width: 100%;
   height: 100%;
 }
-body.post-type-archive-friends_project .content-info .container,
-body.single-friends_project .content-info .container,
+body.single-portfolio .content-info .container,
 body.post-type-archive-portfolio .content-info .container {
   border-top: 0;
 }

@@ -3,6 +3,16 @@
     <header class="page-header">
       <h1 class="entry-title"><?php the_title(); ?></h1>
     </header>
+    <a href="<?php the_permalink(); ?>">
+      <figure>
+        <?php the_post_thumbnail( $size, $attr ); ?>
+        <figcaption>
+          <header>
+            <h3><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></h3>
+          </header>
+        </figcaption>
+      </figure>
+    </a>
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
