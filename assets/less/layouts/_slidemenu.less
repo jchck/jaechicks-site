@@ -8,9 +8,6 @@
 
 .wrapper {
     padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 
         &.toggle{
@@ -47,6 +44,12 @@
     margin-right: -250px;
 }
 
+.toggled{
+    .content-info{
+        max-width: 100%;
+    }
+}
+
 /* Sidebar Styles */
 
 .sidebar-nav {
@@ -60,6 +63,8 @@
         li{
             text-indent: 20px;
             line-height: 40px;
+            .ease-in-out(.2s);
+            text-transform: lowercase;
 
                 a{
                     display: block;

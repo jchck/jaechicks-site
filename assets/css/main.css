@@ -8336,8 +8336,8 @@ header .logo {
 .wrapper {
   padding-left: 0;
   -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 .wrapper.toggle {
   padding-left: 205px;
@@ -8365,6 +8365,9 @@ header .logo {
   position: absolute;
   margin-right: -250px;
 }
+.toggled .content-info {
+  max-width: 100%;
+}
 /* Sidebar Styles */
 .sidebar-nav {
   position: absolute;
@@ -8377,6 +8380,10 @@ header .logo {
 .sidebar-nav li {
   text-indent: 20px;
   line-height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+  text-transform: lowercase;
 }
 .sidebar-nav li a {
   display: block;
