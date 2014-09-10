@@ -13,7 +13,7 @@
 function portfolio() {
 
 	$labels = array(
-		'name'                => __( 'Portfolio Items', 'text-domain' ),
+		'name'                => __( 'Portfolio', 'text-domain' ),
 		'singular_name'       => __( 'Portfolio Item', 'text-domain' ),
 		'add_new'             => _x( 'Add New Portfolio Item', 'text-domain', 'text-domain' ),
 		'add_new_item'        => __( 'Add New Portfolio Item', 'text-domain' ),
