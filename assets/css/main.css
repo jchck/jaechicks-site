@@ -8179,6 +8179,12 @@ figure.alignnone {
   font-weight: normal;
   font-style: normal;
 }
+::-moz-selection {
+  color: #ff4242;
+}
+::selection {
+  color: #ff4242;
+}
 main a {
   -webkit-background-size: 100% 1px;
           background-size: 100% 1px;
