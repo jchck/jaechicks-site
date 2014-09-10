@@ -8337,7 +8337,12 @@ footer {
 @media (min-width: 768px) {
   .foot-across {
     float: left;
-    width: 100%;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 768px) {
+  .foot-across {
+    margin-left: 16.66666667%;
   }
 }
 .foot-across p {
