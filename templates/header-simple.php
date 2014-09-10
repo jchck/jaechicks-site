@@ -1,5 +1,3 @@
-
-
 <header>
 	<div class="bg">
 		<div class="table">
