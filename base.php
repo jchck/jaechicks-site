@@ -8,11 +8,7 @@
     </div>
   <![endif]-->
 
-<div class="sidebar-wrapper">
-  <div class="sidebar-wrapper">
-    <?php wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'sidebar-nav')); ?>
-  </div>
-</div>
+<?php get_template_part( 'templates/sidebar', 'wrapper' ); ?>
 
 <div class="page-content-wrapper">
   <a href="#menu-toggle" class="off-canvas-toggle" id="menu-toggle">Toggle Menu</a>
