@@ -8256,6 +8256,37 @@ header .logo {
 }
 .menu {
   text-transform: lowercase;
+  display: none !important;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu {
+    display: block !important;
+  }
+  table.menu {
+    display: table;
+  }
+  tr.menu {
+    display: table-row !important;
+  }
+  th.menu,
+  td.menu {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  .menu {
+    display: block !important;
+  }
+  table.menu {
+    display: table;
+  }
+  tr.menu {
+    display: table-row !important;
+  }
+  th.menu,
+  td.menu {
+    display: table-cell !important;
+  }
 }
 .menu li {
   -webkit-transition: all 0.2s ease-in-out;
@@ -8296,7 +8327,7 @@ header .logo {
     border: none !important;
   }
 }
-#sidebar-wrapper {
+.off-canvas {
   margin-right: -250px;
   right: 0;
   width: 250px;
