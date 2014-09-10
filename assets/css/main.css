@@ -8464,80 +8464,80 @@ div.notebook {
   background-image: -o-linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
   background-image: linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
 }
-body.post-type-archive-portfolio .content article {
+.post-type-archive-portfolio .content article {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  body.post-type-archive-portfolio .content article {
+  .post-type-archive-portfolio .content article {
     float: left;
     width: 50%;
   }
 }
-body.post-type-archive-portfolio .content article h2 {
+.post-type-archive-portfolio .content article h2 {
   font-size: 25px;
 }
-body.post-type-archive-portfolio .content article.first {
+.post-type-archive-portfolio .content article.first {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  body.post-type-archive-portfolio .content article.first {
+  .post-type-archive-portfolio .content article.first {
     float: left;
     width: 100%;
   }
 }
-body.post-type-archive-portfolio .content article.first h2 {
+.post-type-archive-portfolio .content article.first h2 {
   font-size: 43px;
 }
-body.post-type-archive-portfolio .content article.first h5:before {
+.post-type-archive-portfolio .content article.first h5:before {
   content: 'The Latest';
   display: block;
   margin-bottom: 14px;
 }
-body.single-portfolio,
-body.post-type-archive-portfolio {
+.single-portfolio,
+.post-type-archive-portfolio {
   height: 100%;
   width: 100%;
 }
-body.single-portfolio .navbar-collapse,
-body.post-type-archive-portfolio .navbar-collapse {
+.single-portfolio .navbar-collapse,
+.post-type-archive-portfolio .navbar-collapse {
   border: none;
 }
-body.single-portfolio .content article,
-body.post-type-archive-portfolio .content article {
+.single-portfolio .content article,
+.post-type-archive-portfolio .content article {
   border-bottom: 0px;
   margin-bottom: 0px;
   padding-left: 5px;
   padding-bottom: 10px;
   padding-right: 5px;
 }
-body.single-portfolio .content article.first,
-body.post-type-archive-portfolio .content article.first {
+.single-portfolio .content article.first,
+.post-type-archive-portfolio .content article.first {
   padding-top: 10px;
   padding-right: 5px;
   padding-left: 5px;
 }
-body.single-portfolio .content figure,
-body.post-type-archive-portfolio .content figure {
+.single-portfolio .content figure,
+.post-type-archive-portfolio .content figure {
   position: relative;
 }
-body.single-portfolio .content figure .fluidbox,
-body.post-type-archive-portfolio .content figure .fluidbox {
+.single-portfolio .content figure .fluidbox,
+.post-type-archive-portfolio .content figure .fluidbox {
   display: block;
   width: 100%;
   border-bottom: none;
 }
-body.single-portfolio .content figure img,
-body.post-type-archive-portfolio .content figure img {
+.single-portfolio .content figure img,
+.post-type-archive-portfolio .content figure img {
   margin-bottom: 0;
 }
-body.single-portfolio .content figure figcaption,
-body.post-type-archive-portfolio .content figure figcaption {
+.single-portfolio .content figure figcaption,
+.post-type-archive-portfolio .content figure figcaption {
   position: absolute;
   top: 0;
   right: 0;
@@ -8552,8 +8552,8 @@ body.post-type-archive-portfolio .content figure figcaption {
   z-index: 991;
   pointer-events: none;
 }
-body.single-portfolio .content figure figcaption header,
-body.post-type-archive-portfolio .content figure figcaption header {
+.single-portfolio .content figure figcaption header,
+.post-type-archive-portfolio .content figure figcaption header {
   position: absolute;
   top: 50%;
   text-align: center;
@@ -8564,27 +8564,41 @@ body.post-type-archive-portfolio .content figure figcaption header {
   padding: 0 18%;
   width: 100%;
 }
-body.single-portfolio .content figure figcaption header h2 a,
-body.post-type-archive-portfolio .content figure figcaption header h2 a,
-body.single-portfolio .content figure figcaption header h3 a,
-body.post-type-archive-portfolio .content figure figcaption header h3 a {
+.single-portfolio .content figure figcaption header h2 a,
+.post-type-archive-portfolio .content figure figcaption header h2 a,
+.single-portfolio .content figure figcaption header h3 a,
+.post-type-archive-portfolio .content figure figcaption header h3 a {
   color: #ffffff;
 }
-body.single-portfolio .content figure:hover a:not(.fluidbox-opened) + figcaption,
-body.post-type-archive-portfolio .content figure:hover a:not(.fluidbox-opened) + figcaption {
+.single-portfolio .content figure:hover a:not(.fluidbox-opened) + figcaption,
+.post-type-archive-portfolio .content figure:hover a:not(.fluidbox-opened) + figcaption {
   opacity: 1;
 }
-body.single-portfolio .content img,
-body.post-type-archive-portfolio .content img {
+.single-portfolio .content img,
+.post-type-archive-portfolio .content img {
   margin-left: auto;
   margin-right: auto;
   border-radius: 0;
   width: 100%;
   height: 100%;
 }
-body.single-portfolio .content-info .container,
-body.post-type-archive-portfolio .content-info .container {
+.single-portfolio .content-info .container,
+.post-type-archive-portfolio .content-info .container {
   border-top: 0;
+}
+.single-portfolio .project-deets,
+.post-type-archive-portfolio .project-deets {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .single-portfolio .project-deets,
+  .post-type-archive-portfolio .project-deets {
+    float: left;
+    width: 50%;
+  }
 }
 .page-template-template-contact-php .wrap .list-inline {
   text-align: center;
