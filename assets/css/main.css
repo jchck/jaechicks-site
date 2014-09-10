@@ -8347,8 +8347,20 @@ footer {
 }
 .foot-across p {
   text-align: center;
+}
+.foot-across a:hover {
+  color: #ff4242;
+}
+.foot-across .credit {
   margin-bottom: 0;
   font-size: 15px;
+}
+.foot-across .signup a {
+  color: #ffffff;
+  font-size: 18px;
+}
+.foot-across .signup a:hover {
+  color: #ff4242;
 }
 .foot-across .list-inline {
   text-align: center;
