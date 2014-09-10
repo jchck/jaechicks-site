@@ -8476,6 +8476,9 @@ body.post-type-archive-portfolio .content article {
     width: 50%;
   }
 }
+body.post-type-archive-portfolio .content article h2 {
+  font-size: 25px;
+}
 body.post-type-archive-portfolio .content article.first {
   position: relative;
   min-height: 1px;
@@ -8487,6 +8490,9 @@ body.post-type-archive-portfolio .content article.first {
     float: left;
     width: 100%;
   }
+}
+body.post-type-archive-portfolio .content article.first h2 {
+  font-size: 43px;
 }
 body.post-type-archive-portfolio .content article.first h5:before {
   content: 'The Latest';
