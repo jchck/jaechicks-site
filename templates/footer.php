@@ -12,7 +12,7 @@
 	  		<?php if (!is_page('signup' )){ ?>
 	  			<p class="signup"><a href="#">Did you know I have a weekly newsletter?</a></p>
 	  		<?php } ?>
-	  		<p class="credit"><a href="<?php echo home_url(); ?>" title="Justin Chick is a freelance WordPress developer in St. Louis MO">Made in STL</a> by Justin Chick &copy; <?php the_date( Y ); ?></p>
+	  		<p class="credit"><a href="<?php echo home_url(); ?>" title="Justin Chick is a freelance WordPress developer in St. Louis MO">Made in STL</a> by <a href="<?php echo home_url( 'biography' ); ?>" title="Be sur to update this later">Justin Chick</a> &copy; <?php the_date( Y ); ?></p>
 	  	</div>
 	  </div>
 	</div>
