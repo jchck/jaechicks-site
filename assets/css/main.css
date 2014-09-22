@@ -7907,6 +7907,12 @@ a:hover {
   text-decoration: none;
   border-bottom: none;
 }
+p {
+  line-height: 1.90476191;
+}
+a {
+  padding-bottom: 3px;
+}
 object {
   pointer-events: none;
 }
