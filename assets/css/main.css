@@ -7899,9 +7899,9 @@ button.close {
 	Now set some styles to go across the board
 **/
 a {
-  -webkit-transition: all 0.2s ease-in-out;
-       -o-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
 }
 a:hover {
   text-decoration: none;
