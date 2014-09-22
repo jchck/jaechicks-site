@@ -8706,37 +8706,12 @@ main p:last-child {
     width: 100%;
   }
 }
-.notebook-entry h3:before,
-.notebook-entry h3:after {
-  color: #efefef;
-  -webkit-transition: all 0.5s ease-in-out;
-       -o-transition: all 0.5s ease-in-out;
-          transition: all 0.5s ease-in-out;
-}
-.notebook-entry h3:before {
-  content: '\00ab';
-  margin-right: 25px;
-}
-.notebook-entry h3:after {
-  content: '\00bb';
-  margin-left: 25px;
-}
 .notebook-entry h3 a {
   background: none;
   color: #515151;
 }
 .notebook-entry h3 a:hover {
-  color: #515151;
-}
-.notebook-entry:hover h3:before,
-.notebook-entry:hover h3:after {
-  color: #515151;
-}
-.notebook-entry:hover h3:before {
-  margin-right: 5px;
-}
-.notebook-entry:hover h3:after {
-  margin-left: 5px;
+  color: #c20000;
 }
 div.notebook {
   -webkit-background-size: 100% 1px;
