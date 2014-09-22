@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Signup Template
+Template Name: Landing Template
 */
 ?>
 
