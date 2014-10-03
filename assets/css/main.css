@@ -8194,6 +8194,27 @@ figure.alignnone {
   }
 }
 @font-face {
+  font-family: 'medium-icons';
+  src: url("https://s3.amazonaws.com/medium-static/_/fp/fonts/medium-icons.RKi6ejayKSZJh0OTshbkRg.eot");
+  src: url("https://s3.amazonaws.com/medium-static/_/fp/fonts/medium-icons.RKi6ejayKSZJh0OTshbkRg.eot?#iefix") format("embedded-opentype"), url("https://s3.amazonaws.com/medium-static/_/fp/fonts/medium-icons.0qVySHWi3WfG-NkYbdM9ng.woff") format("woff"), url("https://s3.amazonaws.com/medium-static/_/fp/fonts/medium-icons.mLsoGQwSP5s8oeib362mtQ.ttf") format("truetype"), url("https://s3.amazonaws.com/medium-static/_/fp/fonts/medium-icons.YXqW0c1ibQa2SAL9POl_bw.svg?#medium-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.fa-medium:before {
+  content: "\f12a";
+  font-family: 'medium-icons';
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: none;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1em;
+  position: relative;
+  bottom: -0.15em;
+}
+@font-face {
   font-family: 'gotham_lightregular';
   src: url('@font-path/gotham-light/ufonts.com_gotham-light-webfont.eot');
   src: url('@font-path/gotham-light/ufonts.com_gotham-light-webfont.eot?#iefix') format('embedded-opentype'), url('@font-path/gotham-light/ufonts.com_gotham-light-webfont.woff') format('woff'), url('@font-path/gotham-light/ufonts.com_gotham-light-webfont.ttf') format('truetype'), url('../fonts/gotham-light/ufonts.com_gotham-light-webfont.svg#gotham_lightregular') format('svg');
@@ -8348,11 +8369,6 @@ header .logo {
     border: none !important;
   }
 }
-/*!
- * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 /* Toggle Styles */
 .wrapper {
   padding-left: 0;
