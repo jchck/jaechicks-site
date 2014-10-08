@@ -13,7 +13,7 @@
 	  		<?php if (!is_page('signup' )){ ?>
 	  			<p class="signup"><a href="<?php echo home_url( 'signup' ); ?>">Did you know I have a weekly newsletter?</a></p>
 	  		<?php } ?>
-	  		<p class="credit"><a href="<?php echo home_url(); ?>" title="Justin Chick is a freelance WordPress developer in St. Louis MO">Made in STL</a> by <a href="<?php echo home_url( 'biography' ); ?>" title="Be sur to update this later">Justin Chick</a> with <a href="http://www.justintakespictures.co/" target="_blank"><i class="fa fa-heart-o"></i></a></p>
+	  		<p class="credit"><a href="<?php echo home_url(); ?>" title="Justin Chick is a freelance WordPress developer in St. Louis MO">Made in STL</a> by <a href="<?php echo home_url( 'biography' ); ?>" title="Be sur to update this later">Justin Chick</a> with <a href="http://www.justintakespictures.co/" target="_blank" title="Justin Takes Pictures - Things As I See Them"><i class="fa fa-heart-o"></i></a></p>
 	  		<p class="credit">&copy; <?php the_date( Y ); ?></p>
 	  	</div>
 	  </div>
