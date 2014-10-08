@@ -8685,6 +8685,13 @@ footer {
 .foot-across .credit {
   margin-bottom: 0;
   font-size: 15px;
+  color: #6a6a6a;
+}
+.foot-across .credit a {
+  color: #6a6a6a;
+}
+.foot-across .credit a:hover {
+  color: #ff4242;
 }
 .foot-across .signup a {
   color: #ffffff;
