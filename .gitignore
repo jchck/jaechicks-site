@@ -26,3 +26,5 @@ assets/vendor/respond/*
 /assets/js/vendor/.DS_Store
 
 /assets/vendor/font-awesome/.DS_Store
+
+/assets/vendor/font-awesome/less/variables.less
