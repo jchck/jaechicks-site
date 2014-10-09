@@ -2546,7 +2546,11 @@ if (style.styleSheet){
 }
 head.appendChild(style);
 
-;;/* ========================================================================
+;// Fluidbox
+
+$(function () {
+    $('.entry-content p a').fluidbox();
+});;/* ========================================================================
  * DOM-based Routing
  * Based on http://goo.gl/EUTi53 by Paul Irish
  *
