@@ -8,7 +8,6 @@
 	  			<li><a href="http://twitter.com/jaechick" target="_blank" title="Follow Justin Chick on Twitter"><i class="fa fa-twitter"></i></a></li>
 	  			<li><a href="https://github.com/jaechick" target="_blank" title="See Justin Chick code on Github"><i class="fa fa-github"></i></a></li>
 	  			<li><a href="https://medium.com/@jaechick" target="_blank" title="Read with Justin Chick on Medium"><i class="fa fa-medium"></i></a></li>
-	  			<li><a href="mailto:hey@justinchick.com" target="_blank" title="Contact Justin Chick via Email"><i class="fa fa-envelope"></i></a></li>
 	  		</ul>
 	  		<?php if (!is_page('signup' )){ ?>
 	  			<p class="signup"><a href="<?php echo home_url( 'signup' ); ?>">Did you know I have a weekly newsletter?</a></p>
