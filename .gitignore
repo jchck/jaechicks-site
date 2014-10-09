@@ -3,6 +3,7 @@
 node_modules
 assets/vendor/bootstrap/*
 assets/vendor/fluidbox/*
+assets/vendor/font-awesome/*
 assets/vendor/jquery/*
 assets/vendor/modernizr/*
 assets/vendor/respond/*
@@ -23,3 +24,5 @@ assets/vendor/respond/*
 
 /assets/js/.DS_Store
 /assets/js/vendor/.DS_Store
+
+/assets/vendor/font-awesome/.DS_Store
