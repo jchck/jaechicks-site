@@ -10727,6 +10727,23 @@ div.notebook {
   background-image: -o-linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
   background-image: linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
 }
+.signup .gfield {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .signup .gfield {
+    float: left;
+    width: 50%;
+  }
+}
+.back {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+}
 .hentry time {
   display: block;
   text-align: center;
