@@ -10518,6 +10518,15 @@ footer {
   content: '\00bb';
   margin-left: 25px;
 }
+@media (max-width: 768px) {
+  .page-header h1:before,
+  .hentry header.page-header h1:before,
+  .page-header h1:after,
+  .hentry header.page-header h1:after {
+    content: ' ';
+    margin: 0;
+  }
+}
 main {
   margin-bottom: 30px;
 }
@@ -10533,6 +10542,29 @@ main:hover h1:after {
 }
 main p:last-child {
   margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 44px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 21px;
+  }
+  h5 {
+    font-size: 17px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 17px;
+  }
 }
 .home .bg {
   position: absolute;
