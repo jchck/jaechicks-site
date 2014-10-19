@@ -10045,6 +10045,11 @@ header .bg {
 header .bg:after {
   background-attachment: fixed;
 }
+@media (max-width: 768px) {
+  header .bg {
+    height: 250px;
+  }
+}
 header .logo {
   width: 227px;
   height: 127px;
@@ -10176,15 +10181,15 @@ header .logo {
   padding-left: 205px;
 }
 .wrapper.toggle .sidebar-wrapper {
-  width: 250px;
+  width: 200px;
 }
 .sidebar-wrapper {
   z-index: 1000;
   position: fixed;
-  left: 250px;
+  left: 200px;
   width: 0;
   height: 100%;
-  margin-left: -250px;
+  margin-left: -200px;
   overflow-y: auto;
   background: #515151;
   -webkit-transition: all 0.5s ease;
@@ -10196,7 +10201,7 @@ header .logo {
 }
 .wrapper.toggled .page-content-wrapper {
   position: absolute;
-  margin-right: -250px;
+  margin-right: -200px;
 }
 .toggled .content-info {
   max-width: 100%;
@@ -10205,7 +10210,7 @@ header .logo {
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 200px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -10249,13 +10254,13 @@ header .logo {
     padding-left: 0px;
   }
   .wrapper.toggled {
-    padding-left: 250px;
+    padding-left: 200px;
   }
   .sidebar-wrapper {
     width: 0px;
   }
   .wrapper.toggled .sidebar-wrapper {
-    width: 250px;
+    width: 200px;
   }
   .wrapper.toggled .page-content-wrapper {
     position: relative;
@@ -10267,13 +10272,13 @@ header .logo {
     padding-left: 0px;
   }
   .wrapper.toggled {
-    padding-left: 250px;
+    padding-left: 200px;
   }
   .sidebar-wrapper {
     width: 0px;
   }
   .wrapper.toggled .sidebar-wrapper {
-    width: 250px;
+    width: 200px;
   }
   .wrapper.toggled .page-content-wrapper {
     position: relative;
