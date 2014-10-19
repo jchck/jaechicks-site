@@ -2554,7 +2554,9 @@ $(function () {
 
 // Logo Animation Delay
 
-;/* ========================================================================
+$("window").load(function() {
+	$("body").removeClass("slideDown");
+});;/* ========================================================================
  * DOM-based Routing
  * Based on http://goo.gl/EUTi53 by Paul Irish
  *

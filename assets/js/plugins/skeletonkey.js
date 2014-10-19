@@ -6,3 +6,6 @@ $(function () {
 
 // Logo Animation Delay
 
+$("window").load(function() {
+	$("body").removeClass("slideDown");
+});
