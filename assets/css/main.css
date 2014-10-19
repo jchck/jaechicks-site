@@ -10126,12 +10126,12 @@ header .logo {
        -o-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
 }
-.menu li:hover {
-  opacity: .3;
-}
 .menu li a {
   color: #0e0403;
   border-bottom: none;
+}
+.menu li a:hover {
+  color: #c20000;
 }
 .table {
   overflow: hidden;
