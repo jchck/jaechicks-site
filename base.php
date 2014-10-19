@@ -11,7 +11,7 @@
 <?php get_template_part( 'templates/sidebar', 'wrapper' ); ?>
 
 <div class="page-content-wrapper">
-  <a href="#menu-toggle" class="off-canvas-toggle" id="menu-toggle">Toggle Menu</a>
+  <a href="#menu-toggle" class="off-canvas-toggle" id="menu-toggle"><i class="fa fa-bars"></i></a>
 
   <?php if (!is_front_page()){ ?>
     <?php
