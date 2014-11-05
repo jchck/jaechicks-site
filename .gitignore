@@ -30,3 +30,5 @@ assets/vendor/respond/*
 /assets/vendor/font-awesome/less/variables.less
 
 /assets/less/.DS_Store
+
+/assets/less/components/.DS_Store
