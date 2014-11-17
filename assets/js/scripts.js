@@ -3382,6 +3382,12 @@ head.appendChild(style);
 
 $(function () {
     $('.entry-content p a').fluidbox();
+});
+
+// PJAX Jibber Jabber
+
+$(function (){
+	$(document).pjax('a', '.wrapper');
 });;/* ========================================================================
  * DOM-based Routing
  * Based on http://goo.gl/EUTi53 by Paul Irish

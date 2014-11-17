@@ -19,7 +19,6 @@ module.exports = function(grunt) {
     'assets/vendor/bootstrap/js/tab.js',
     'assets/vendor/bootstrap/js/affix.js',
     'assets/vendor/fluidbox/jquery.fluidbox.js',
-    'assets/vendor/jquery-pjax/jquery.pjax.js',
     'assets/js/plugins/*.js',
     'assets/js/_*.js'
   ];
