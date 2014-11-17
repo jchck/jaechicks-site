@@ -7,6 +7,7 @@ assets/vendor/font-awesome/*
 assets/vendor/jquery/*
 assets/vendor/modernizr/*
 assets/vendor/respond/*
+assets/vendor/jquery-pjax/*
 # assets/css/main.css.map
 # assets/css/*main*.css
 # assets/js/*scripts*.js
