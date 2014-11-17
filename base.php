@@ -25,9 +25,9 @@
   <?php } ?>
 
   <?php if (!is_front_page()){ ?>
-    <div class="wrap container" id="pjax" role="document">
+    <div class="wrap container" role="document">
       <div class="content row">
-        <main class="main <?php echo roots_main_class(); ?>" role="main">
+        <main class="main <?php echo roots_main_class(); ?>" id="pjax-container" role="main">
           <?php include roots_template_path(); ?>
         </main><!-- /.main -->
         <?php if (roots_display_sidebar()) : ?>
