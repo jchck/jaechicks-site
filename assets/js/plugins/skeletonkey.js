@@ -3,5 +3,3 @@
 $(function () {
     $('.entry-content p a').fluidbox();
 });
-
-// pjax
