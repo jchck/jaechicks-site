@@ -13,16 +13,12 @@
 <div class="page-content-wrapper">
   <a href="#menu-toggle" class="off-canvas-toggle" id="menu-toggle"><i class="fa fa-bars"></i></a>
 
-  <?php if (!is_front_page()){ ?>
-    <?php
-      do_action('get_header');
-      get_template_part('templates/header', 'simple');
-    ?>
-  <?php } ?>
-
-  <?php if (is_front_page()){ ?>
-    <?php get_template_part( 'templates/home' ); ?>
-  <?php } ?>
+  <?php if (!is_front_page()) {
+    do_action( 'get_header' );
+    get_template_part( 'templates/header', 'simple' );
+  } else {
+    get_template_part( 'templates/home' );
+  } ?>
 
   <?php if (!is_front_page()){ ?>
     <div class="wrap container" role="document">

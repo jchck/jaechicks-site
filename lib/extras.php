@@ -20,3 +20,12 @@ function roots_wp_title($title) {
   return $title;
 }
 add_filter('wp_title', 'roots_wp_title', 10);
+
+
+/**
+ * Pjax stuff
+ */
+
+function is_pjax_request() {
+    return (isset($_SERVER['HTTP_X_PJAX']) && $_SERVER['HTTP_X_PJAX'] == 'true');
+}
