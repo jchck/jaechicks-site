@@ -24,6 +24,7 @@ $roots_includes = array(
   'lib/extras.php',          // Custom functions
   'lib/cpt.php',             // Register custom post types for portfolio
   'lib/ot.php',              // OptionTree attached here
+  'lib/pjax.php'             // Pjax stuff
 );
 
 foreach ($roots_includes as $file) {
