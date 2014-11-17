@@ -3360,35 +3360,7 @@ function backgroundResize(){
 }
 $(window).resize(backgroundResize);
 $(window).focus(backgroundResize);
-backgroundResize();;// // For side menu and smooth scrolling
-
-// $("#menu-close").click(function(e) {
-//     e.preventDefault();
-//     $("#sidebar-wrapper").toggleClass("active");
-// });
-
-// $("#menu-toggle").click(function(e) {
-//     e.preventDefault();
-//     $("#sidebar-wrapper").toggleClass("active");
-// });
-
-// $(function() {
-//     $('a[href*=#]:not([href=#])').click(function() {
-//         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
-
-//             var target = $(this.hash);
-//             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-//             if (target.length) {
-//                 $('html,body').animate({
-//                     scrollTop: target.offset().top
-//                 }, 1000);
-//                 return false;
-//             }
-//         }
-//     });
-// });
-
-$("#menu-toggle").click(function(e) {
+backgroundResize();;$("#menu-toggle").click(function(e) {
     e.preventDefault();
     $(".wrapper").toggleClass("toggled");
 });;// For random header background images
@@ -3410,12 +3382,6 @@ head.appendChild(style);
 
 $(function () {
     $('.entry-content p a').fluidbox();
-});
-
-// Logo Animation Delay
-
-$("window").load(function() {
-	$("body").removeClass("slideDown");
 });;/* ========================================================================
  * DOM-based Routing
  * Based on http://goo.gl/EUTi53 by Paul Irish
