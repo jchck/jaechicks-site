@@ -2522,7 +2522,10 @@ head.appendChild(style);
 
 $(function () {
     $('.entry-content p a').fluidbox();
-});;/* ========================================================================
+});
+
+// pjax
+$(document).pjax('a', '#pjax');;/* ========================================================================
  * DOM-based Routing
  * Based on http://goo.gl/EUTi53 by Paul Irish
  *
