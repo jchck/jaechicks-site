@@ -1,17 +1,16 @@
 <?php get_template_part('templates/head'); ?>
 <body <?php body_class(); ?>>
-<div class="wrapper">
+<div class="site-wrap">
+<?php get_template_part( 'templates/sidebar', 'wrapper' ); ?>
+<div class="push-wrap">
+  <div class="it-all">
+  <a href="#" class="toggle-nav"><i class="fa fa-bars"></i></a>
 
   <!--[if lt IE 8]>
     <div class="alert alert-warning">
       <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?>
     </div>
   <![endif]-->
-
-<?php get_template_part( 'templates/sidebar', 'wrapper' ); ?>
-
-<div class="page-content-wrapper">
-  <a href="#menu-toggle" class="off-canvas-toggle" id="menu-toggle"><i class="fa fa-bars"></i></a>
 
   <?php
     if (!is_front_page()) {
@@ -37,7 +36,8 @@
   <?php } ?>
 
   <?php get_template_part('templates/footer'); ?>
-</div>
-</div>
+</div><!-- /.it-all -->
+</div><!-- /.push-wrap -->
+</div><!-- /.site-wrap -->
 </body>
 </html>

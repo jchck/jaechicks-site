@@ -1,154 +1,70 @@
-/* Toggle Styles */
-
-.wrapper {
-    padding-left: 0;
-    transition: all 0.5s ease;
-
-        &.toggle{
-            padding-left: 205px;
-
-                .sidebar-wrapper{
-                    width: 200px;
-                }
-        }
-}
-
-.sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    left: 200px;
-    width: 0;
+.site-wrap{ /* Hides everything pushed outside of it */
+    overflow: hidden;
+    width: 100%;
     height: 100%;
-    margin-left: -200px;
-    overflow-y: auto;
-    background: @gray-dark;
-    transition: all 0.5s ease;
 }
 
-.page-content-wrapper {
-    overflow-x: hidden;
+.push-wrap{ /* Adds a transition and the resting translate state */
+    transition: all 300ms ease 0;
+    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
-.wrapper.toggled .page-content-wrapper {
-    position: absolute;
-    margin-right: -200px;
+.show-nav .push-wrap{ /* Will animate the content to the right 275px revealing the hidden nav */
+     transform: translate(275px, 0);
+     transform: translate3d(275px, 0, 0);
 }
 
-.toggled{
-    .content-info{
-        max-width: 100%;
-    }
-}
-
-/* Sidebar Styles */
-
-.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 200px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-        li{
-            text-indent: 20px;
-            line-height: 40px;
-            .ease-in-out(.2s);
-            text-transform: lowercase;
-
-                a{
-                    display: block;
-                    text-decoration: none;
-                    color: #999;
-
-                        &:hover{
-                            color: #fff;
-                            background: rgba(255,255,255,0.2);
-                        }
-
-                        &:hover,
-                        &.active,
-                        &:focus{
-                            text-decoration: none;
-                        }
-                }
-        }
-}
-
-.sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
-
-        a{
-            color: #999;
-
-                &:hover{
-                    color: #fff;
-                    background: none;
-                }
-        }
-}
-
-@media(min-width:@screen-xs-min) {
-    .wrapper {
-        padding-left: 0px;
-    }
-
-    .wrapper.toggled {
-        padding-left: 200px;
-    }
-
-    .sidebar-wrapper {
-        width: 0px;
-    }
-
-    .wrapper.toggled .sidebar-wrapper {
-        width: 200px;
-    }
-
-    .page-content-wrapper {
-        //padding: 20px;
-    }
-
-    .wrapper.toggled .page-content-wrapper {
-        position: relative;
-        margin-right: 0;
-    }
-}
-
-@media(max-width:@screen-xs-min){
-    .wrapper{
-        padding-left: 0px;
-    }
-
-    .wrapper.toggled{
-        padding-left: 200px;
-    }
-
-    .sidebar-wrapper{
-        width: 0px;
-    }
-
-    .wrapper.toggled .sidebar-wrapper{
-        width: 200px;
-    }
-
-    .wrapper.toggled .page-content-wrapper{
-        position: relative;
-        margin-right: 0;
-    }
-}
-
-.off-canvas-toggle{
-    .btn();
-    .btn-primary();
-    .visible-sm();
-    .visible-xs();
+nav{
+    width: 275px;
+    height: 100%;
     position: fixed;
     top: 0;
-    right: 0;
-    z-index: 1;
-    background: transparent;
-    color: @black;
+    left: 0;
+    background: #2b343f;
+    box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.5);
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li a{
+            display: block;
+            text-decoration: none !important;
+            height: 60px;
+            line-height: 60px;
+            font-size: 18px;
+            color: #fff;
+
+            &:hover{
+                background: #4EFFFF;
+                color: #000;
+            }
+        }
+    }
+}
+
+.it-all{
+    position: relative;
+    min-height: 1500px;
+    background: @body-bg;
+    z-index: 9;
+    width: 100%;
+
+    a.toggle-nav{
+        position: absolute;
+        font-size: 25px;
+        color: rgb(255, 139, 139);
+        top: 0;
+        left: 0;
+        background: #444;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        .visible-xs;
+        .visible-sm;
+        z-index: @z-firstfloor;
+    }
 }

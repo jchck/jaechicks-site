@@ -405,9 +405,21 @@ function backgroundResize(){
 }
 $(window).resize(backgroundResize);
 $(window).focus(backgroundResize);
-backgroundResize();;$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $(".wrapper").toggleClass("toggled");
+backgroundResize();;// Normal Clicks
+$(function() {
+  $('.toggle-nav').click(function() {
+    $('body').toggleClass('show-nav');
+     return false;
+  });
+  
+});
+
+
+// Toggle with hitting of ESC
+$(document).keyup(function(e) {
+	if (e.keyCode === 27) {
+   $('body').toggleClass('show-nav');
+  }
 });;// For random header background images
 // This approach was used in order to manipulate pseudo-elements
 var count = 15,
