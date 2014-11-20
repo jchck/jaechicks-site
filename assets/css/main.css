@@ -6926,6 +6926,59 @@ header .logo {
           transform: translate(0, 0);
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+  position: relative;
+  min-height: 950px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: 50% 0;
+  z-index: 1030;
+  width: 100%;
+}
+.push-wrap a.toggle-nav {
+  position: absolute;
+  font-size: 25px;
+  color: #ff8b8b;
+  top: 0;
+  left: 0;
+  background: #444;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  display: none !important;
+  z-index: 1030;
+}
+@media (max-width: 767px) {
+  .push-wrap a.toggle-nav {
+    display: block !important;
+  }
+  table.push-wrap a.toggle-nav {
+    display: table;
+  }
+  tr.push-wrap a.toggle-nav {
+    display: table-row !important;
+  }
+  th.push-wrap a.toggle-nav,
+  td.push-wrap a.toggle-nav {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .push-wrap a.toggle-nav {
+    display: block !important;
+  }
+  table.push-wrap a.toggle-nav {
+    display: table;
+  }
+  tr.push-wrap a.toggle-nav {
+    display: table-row !important;
+  }
+  th.push-wrap a.toggle-nav,
+  td.push-wrap a.toggle-nav {
+    display: table-cell !important;
+  }
 }
 .show-nav .push-wrap {
   /* Will animate the content to the right 275px revealing the hidden nav */
@@ -6962,57 +7015,6 @@ nav ul li a {
 nav ul li a:hover {
   background: #4EFFFF;
   color: #000;
-}
-.it-all {
-  position: relative;
-  min-height: 1500px;
-  background: #ffffff;
-  z-index: 9;
-  width: 100%;
-}
-.it-all a.toggle-nav {
-  position: absolute;
-  font-size: 25px;
-  color: #ff8b8b;
-  top: 0;
-  left: 0;
-  background: #444;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  display: none !important;
-  z-index: 1030;
-}
-@media (max-width: 767px) {
-  .it-all a.toggle-nav {
-    display: block !important;
-  }
-  table.it-all a.toggle-nav {
-    display: table;
-  }
-  tr.it-all a.toggle-nav {
-    display: table-row !important;
-  }
-  th.it-all a.toggle-nav,
-  td.it-all a.toggle-nav {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .it-all a.toggle-nav {
-    display: block !important;
-  }
-  table.it-all a.toggle-nav {
-    display: table;
-  }
-  tr.it-all a.toggle-nav {
-    display: table-row !important;
-  }
-  th.it-all a.toggle-nav,
-  td.it-all a.toggle-nav {
-    display: table-cell !important;
-  }
 }
 footer {
   background: #383838;
