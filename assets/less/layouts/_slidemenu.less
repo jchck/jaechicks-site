@@ -1,23 +1,23 @@
 .site-wrap{ /* Hides everything pushed outside of it */
-    // overflow: hidden;
-    // width: 100%;
-    // height: 100%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .push-wrap{ /* Adds a transition and the resting translate state */
-    transition: all 300ms ease 0;
-    transform: translate(0, 0);
-    transform: translate3d(0, 0, 0);
+    @media (max-width: @container-desktop) {
+        transition: all 300ms ease 0;
+        transform: translate(0, 0);
+        transform: translate3d(0, 0, 0);
 
-    position: relative;
-    min-height: 950px;
-    //height: 100%;
-    background-color: @body-bg;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 0;
-    z-index: @z-firstfloor;
-    width: 100%;
+        position: relative;
+        min-height: 950px;
+        background-color: @body-bg;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 0;
+        width: 100%;
+    }
 
     a.toggle-nav{
         position: absolute;
@@ -37,11 +37,13 @@
 }
 
 .show-nav .push-wrap{ /* Will animate the content to the right 275px revealing the hidden nav */
-     transform: translate(275px, 0);
-     transform: translate3d(275px, 0, 0);
+    transform: translate(275px, 0);
+    transform: translate3d(275px, 0, 0);
 }
 
-nav{
+nav.mobile{
+    .visible-xs;
+    .visible-sm;
     width: 275px;
     height: 100%;
     position: fixed;
@@ -69,29 +71,4 @@ nav{
             }
         }
     }
-}
-
-.it-all{
-    // position: relative;
-    // min-height: 1500px;
-    // //height: 100%;
-    // background: @body-bg;
-    // z-index: 9;
-    // width: 100%;
-
-    // a.toggle-nav{
-    //     position: absolute;
-    //     font-size: 25px;
-    //     color: rgb(255, 139, 139);
-    //     top: 0;
-    //     left: 0;
-    //     background: #444;
-    //     width: 60px;
-    //     height: 60px;
-    //     line-height: 60px;
-    //     text-align: center;
-    //     .visible-xs;
-    //     .visible-sm;
-    //     z-index: @z-firstfloor;
-    // }
 }
