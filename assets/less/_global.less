@@ -19,10 +19,10 @@
   transition: all @time ease-in-out;
 }
 
-.opacity-bg() {
+.opacity-bg(@opacity) {
 	&:after{
 		content: "";
-		opacity: 0.5;
+		opacity: @opacity;
 		top: 0;
 		right: 0;
 		bottom: 0;

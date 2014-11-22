@@ -5,7 +5,7 @@
 }
 
 .push-wrap{ /* Adds a transition and the resting translate state */
-    @media (max-width: @container-desktop) {
+    @media (max-width: @screen-md-min) {
         transition: all 300ms ease 0;
         transform: translate(0, 0);
         transform: translate3d(0, 0, 0);
@@ -41,7 +41,7 @@
     transform: translate3d(275px, 0, 0);
 }
 
-nav.mobile{
+nav.slidemenu{
     .visible-xs;
     .visible-sm;
     width: 275px;

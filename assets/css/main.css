@@ -6781,13 +6781,13 @@ header .bg {
   height: 300px;
   position: relative;
 }
-header .bg:after {
-  background-attachment: fixed;
-}
 @media (max-width: 768px) {
   header .bg {
     height: 250px;
   }
+}
+header .bg:after {
+  background-attachment: fixed;
 }
 header .logo {
   width: 227px;
@@ -6918,7 +6918,7 @@ header .logo {
 .push-wrap {
   /* Adds a transition and the resting translate state */
 }
-@media (max-width: 970px) {
+@media (max-width: 992px) {
   .push-wrap {
     -webkit-transition: all 300ms ease 0;
          -o-transition: all 300ms ease 0;
@@ -6992,7 +6992,7 @@ header .logo {
   -webkit-transform: translate3d(275px, 0, 0);
           transform: translate3d(275px, 0, 0);
 }
-nav.mobile {
+nav.slidemenu {
   display: none !important;
   width: 275px;
   height: 100%;
@@ -7004,41 +7004,41 @@ nav.mobile {
           box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 767px) {
-  nav.mobile {
+  nav.slidemenu {
     display: block !important;
   }
-  tablenav.mobile {
+  tablenav.slidemenu {
     display: table;
   }
-  trnav.mobile {
+  trnav.slidemenu {
     display: table-row !important;
   }
-  thnav.mobile,
-  tdnav.mobile {
+  thnav.slidemenu,
+  tdnav.slidemenu {
     display: table-cell !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  nav.mobile {
+  nav.slidemenu {
     display: block !important;
   }
-  tablenav.mobile {
+  tablenav.slidemenu {
     display: table;
   }
-  trnav.mobile {
+  trnav.slidemenu {
     display: table-row !important;
   }
-  thnav.mobile,
-  tdnav.mobile {
+  thnav.slidemenu,
+  tdnav.slidemenu {
     display: table-cell !important;
   }
 }
-nav.mobile ul {
+nav.slidemenu ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-nav.mobile ul li a {
+nav.slidemenu ul li a {
   display: block;
   text-decoration: none !important;
   height: 60px;
@@ -7046,7 +7046,7 @@ nav.mobile ul li a {
   font-size: 18px;
   color: #fff;
 }
-nav.mobile ul li a:hover {
+nav.slidemenu ul li a:hover {
   background: #4EFFFF;
   color: #000;
 }

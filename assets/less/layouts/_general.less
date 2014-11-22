@@ -59,13 +59,14 @@ header{
 		.bg{
 			background-attachment: fixed;
 			height: 300px;
+			@media (max-width: @screen-sm-min) {
+				height: 250px;
+			}
 			position: relative;
 				&:after{
 					background-attachment: fixed;
+					//background-repeat: no-repeat;
 				}
-			@media (max-width: @screen-sm-min){
-				height: 250px;
-			}
 		}
 
 		.logo{
@@ -81,7 +82,7 @@ header{
 	left: 0;
 	display: block;
 	width: 100%;
-	.opacity-bg();
+	.opacity-bg(0.5);
 
 	.bg&:after{
 		background-size: cover;
