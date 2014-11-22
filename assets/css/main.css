@@ -6781,7 +6781,7 @@ header .bg {
   height: 300px;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   header .bg {
     height: 250px;
   }
