@@ -6930,7 +6930,7 @@ header .logo {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
     position: relative;
-    min-height: 950px;
+    min-height: 660px;
     background-color: #ffffff;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -6942,10 +6942,10 @@ header .logo {
 .push-wrap a.toggle-nav {
   position: absolute;
   font-size: 25px;
-  color: #ff8b8b;
+  color: #ff4242;
   top: 0;
   left: 0;
-  background: #444;
+  background: #515151;
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -6999,7 +6999,7 @@ nav.slidemenu {
   position: fixed;
   top: 0;
   left: 0;
-  background: #2b343f;
+  background: #383838;
   -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.5);
           box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.5);
 }
@@ -7044,11 +7044,12 @@ nav.slidemenu ul li a {
   height: 60px;
   line-height: 60px;
   font-size: 18px;
-  color: #fff;
+  color: #eeeeee;
+  padding-left: 20px;
 }
 nav.slidemenu ul li a:hover {
-  background: #4EFFFF;
-  color: #000;
+  background: #ff5c5c;
+  color: #0e0403;
 }
 footer {
   background: #383838;
