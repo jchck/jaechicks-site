@@ -7222,22 +7222,22 @@ main .hentry header.page-header p:last-child {
 }
 @media (max-width: 768px) {
   h1 {
-    font-size: 44px;
+    font-size: 41px;
   }
   h2 {
-    font-size: 36px;
+    font-size: 34px;
   }
   h3 {
-    font-size: 28px;
+    font-size: 27px;
   }
   h4 {
-    font-size: 21px;
+    font-size: 20px;
   }
   h5 {
-    font-size: 17px;
+    font-size: 16px;
   }
   h6 {
-    font-size: 14px;
+    font-size: 13px;
   }
   p {
     font-size: 17px;
