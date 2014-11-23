@@ -33,3 +33,5 @@ assets/vendor/jquery-pjax/*
 /assets/less/.DS_Store
 
 /assets/less/components/.DS_Store
+
+.DS_Store
