@@ -6939,6 +6939,11 @@ header .logo {
     width: 100%;
   }
 }
+@media (max-width: 992px) and (max-width: 480px) {
+  .push-wrap {
+    min-height: 550px;
+  }
+}
 .push-wrap a.toggle-nav {
   position: absolute;
   font-size: 25px;
