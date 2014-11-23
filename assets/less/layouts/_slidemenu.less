@@ -12,8 +12,14 @@
 
         position: relative;
         min-height: 660px;
-        @media (max-width: @screen-xs-min) {
-            min-height: 550px;
+        @media (max-width: 414px) { //iPhone 6+
+            min-height: 736px;
+        }
+        @media (max-width: 375px) { //iPhone 6
+            min-height: 667px;
+        }
+        @media (max-width: 320px) { //iPhone 5
+            min-height: 568px;
         }
         background-color: @body-bg;
         background-repeat: no-repeat;
@@ -45,8 +51,8 @@
 }
 
 nav.slidemenu{
-    .visible-xs;
-    .visible-sm;
+    //.visible-xs;
+    //.visible-sm;
     width: 275px;
     height: 100%;
     position: fixed;
