@@ -11,8 +11,10 @@
         transform: translate3d(0, 0, 0);
 
         position: relative;
-        //min-height: 950px;
         min-height: 660px;
+        @media (max-width: @screen-xs-min) {
+            min-height: 550px;
+        }
         background-color: @body-bg;
         background-repeat: no-repeat;
         background-size: cover;
