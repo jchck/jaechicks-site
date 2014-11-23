@@ -10,7 +10,9 @@
 	  			<li><a href="https://github.com/jaechick" target="_blank" title="See Justin Chick code on Github"><i class="fa fa-github"></i></a></li>
 	  			<li><a href="https://medium.com/@jaechick" target="_blank" title="Read with Justin Chick on Medium"><i class="fa fa-medium"></i></a></li>
 	  		</ul>
-	  			<p class="signup"><a href="<?php echo home_url( 'signup' ); ?>">Did you know I have a weekly newsletter?</a></p>
+		  		<?php if (current_theme_supports('signup' )) { ?>
+		  			<p class="signup"><a href="<?php echo home_url( 'signup' ); ?>">Did you know I have a weekly newsletter?</a></p>
+		  		<?php } ?>
 	  		<?php } ?>
 	  		<p class="credit"><a href="<?php echo home_url(); ?>" title="Justin Chick is a WordPress developer in St. Louis MO">Made in STL</a> by <a href="<?php echo home_url( 'biography' ); ?>" title="Be sur to update this later">Justin Chick</a> | <a href="<?php echo home_url( 'colophon' ); ?>">Colophon</a></p>
 	  		<p class="credit">&copy; <?php the_date( Y ); ?></p>
