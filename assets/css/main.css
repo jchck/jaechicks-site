@@ -7235,6 +7235,12 @@ main .hentry header.page-header p:last-child {
   height: 211px;
   width: 378px;
 }
+@media (max-width: 480px) {
+  .home .logo {
+    height: 150px;
+    width: 269px;
+  }
+}
 .notebook-entry {
   margin-left: -15px;
   margin-right: -15px;

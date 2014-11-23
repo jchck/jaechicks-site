@@ -1,14 +1,16 @@
 .home{
 	.bg{
 		position: absolute;
+		// height: 100%;
+		// overflow: hidden;
+		// -webkit-overflow-scrolling: touch;
 	}
 	.logo{
 		height: 211px;
 		width: 378px;
-	}
-	.push-wrap{
-		@media (max-width: @container-desktop) {
-			
+		@media (max-width: @screen-xs-min) {
+			height: 150px;
+			width: 269px; 
 		}
 	}
 }
