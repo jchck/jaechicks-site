@@ -7165,28 +7165,44 @@ footer {
     margin-left: 0;
   }
 }
-main {
+main,
+main .hentry header.page-header {
   margin-bottom: 30px;
 }
 main:hover h1:before,
-main:hover h1:after {
+main .hentry header.page-header:hover h1:before,
+main:hover .entry-title:before,
+main .hentry header.page-header:hover .entry-title:before,
+main:hover h1:after,
+main .hentry header.page-header:hover h1:after,
+main:hover .entry-title:after,
+main .hentry header.page-header:hover .entry-title:after {
   color: #515151;
 }
-main:hover h1:before {
+main:hover h1:before,
+main .hentry header.page-header:hover h1:before,
+main:hover .entry-title:before,
+main .hentry header.page-header:hover .entry-title:before {
   margin-right: 5px;
 }
-main:hover h1:after {
+main:hover h1:after,
+main .hentry header.page-header:hover h1:after,
+main:hover .entry-title:after,
+main .hentry header.page-header:hover .entry-title:after {
   margin-left: 5px;
 }
 @media (max-width: 768px) {
   main h1:before,
-  main h1:after {
+  main .hentry header.page-header h1:before,
+  main h1:after,
+  main .hentry header.page-header h1:after {
     content: '';
     margin-left: 0;
     margin-right: 0;
   }
 }
-main p:last-child {
+main p:last-child,
+main .hentry header.page-header p:last-child {
   margin-bottom: 0;
 }
 @media (max-width: 768px) {
