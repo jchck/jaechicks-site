@@ -7008,6 +7008,7 @@ header .logo {
           transform: translate3d(275px, 0, 0);
 }
 nav.slidemenu {
+  display: none !important;
   width: 275px;
   height: 100%;
   position: fixed;
@@ -7016,6 +7017,36 @@ nav.slidemenu {
   background: #383838;
   -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.5);
           box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 767px) {
+  nav.slidemenu {
+    display: block !important;
+  }
+  tablenav.slidemenu {
+    display: table;
+  }
+  trnav.slidemenu {
+    display: table-row !important;
+  }
+  thnav.slidemenu,
+  tdnav.slidemenu {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  nav.slidemenu {
+    display: block !important;
+  }
+  tablenav.slidemenu {
+    display: table;
+  }
+  trnav.slidemenu {
+    display: table-row !important;
+  }
+  thnav.slidemenu,
+  tdnav.slidemenu {
+    display: table-cell !important;
+  }
 }
 nav.slidemenu ul {
   margin: 0;
