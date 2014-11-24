@@ -1,37 +1,12 @@
 # Include your project-specific ignores in this file
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 node_modules
-assets/vendor/bootstrap/*
-assets/vendor/fluidbox/*
-assets/vendor/font-awesome/*
-assets/vendor/jquery/*
-assets/vendor/modernizr/*
-assets/vendor/respond/*
-assets/vendor/jquery-pjax/*
-# assets/css/main.css.map
-# assets/css/*main*.css
-# assets/js/*scripts*.js
-# assets/js/vendor/modernizr.min.js
-# assets/manifest.json
-
-/.DS_Store
-
-.gitignore
-
-/assets/.DS_Store
-/assets/fonts/.DS_Store
-
-/assets/vendor/.DS_Store
-
-/assets/js/.DS_Store
-/assets/js/vendor/.DS_Store
-
-/assets/vendor/font-awesome/.DS_Store
-
-/assets/vendor/font-awesome/less/variables.less
-
-/assets/less/.DS_Store
-
-/assets/less/components/.DS_Store
-
+assets/vendor/*
+assets/css/main.css.map
+assets/css/*main*.css
+assets/js/*scripts*.js
+assets/js/vendor/modernizr.min.js
+assets/manifest.json
 .DS_Store
+assets/img/jaechick-logo.png
+assets/img/logo.svg
