@@ -7136,8 +7136,13 @@ footer {
 .foot-across .list-inline {
   text-align: center;
 }
-.page-header,
-.hentry header.page-header {
+.hentry .page-header h1:before {
+  margin-right: 5px;
+}
+.hentry .page-header h1:after {
+  margin-left: 5px;
+}
+.page-header {
   -webkit-background-size: 100% 1px;
           background-size: 100% 1px;
   background-repeat: no-repeat;
@@ -7147,34 +7152,27 @@ footer {
   background-image: -o-linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
   background-image: linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
 }
-.page-header h1,
-.hentry header.page-header h1 {
+.page-header h1 {
   text-align: center;
 }
 .page-header h1:before,
-.hentry header.page-header h1:before,
-.page-header h1:after,
-.hentry header.page-header h1:after {
+.page-header h1:after {
   color: #efefef;
   -webkit-transition: all 0.5s ease-in-out;
        -o-transition: all 0.5s ease-in-out;
           transition: all 0.5s ease-in-out;
 }
-.page-header h1:before,
-.hentry header.page-header h1:before {
+.page-header h1:before {
   content: '\00ab';
   margin-right: 25px;
 }
-.page-header h1:after,
-.hentry header.page-header h1:after {
+.page-header h1:after {
   content: '\00bb';
   margin-left: 25px;
 }
 @media (max-width: 768px) {
   .page-header h1:before,
-  .hentry header.page-header h1:before,
-  .page-header h1:after,
-  .hentry header.page-header h1:after {
+  .page-header h1:after {
     content: ' ';
     margin-right: 0;
     margin-left: 0;

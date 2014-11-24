@@ -1,5 +1,13 @@
-.page-header,
-.hentry header.page-header{ // .hentry header is for single posts
+.hentry .page-header h1{
+	
+	&:before{
+		margin-right: 5px;
+	}
+	&:after{
+		margin-left: 5px;
+	}
+}
+.page-header{ // .hentry header is for single posts
 	.border-bottom-gradient(lighten(@gray-dark,33%));
 
 	h1{
