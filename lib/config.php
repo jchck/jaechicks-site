@@ -7,7 +7,7 @@ add_theme_support('soil-relative-urls');    // Enable relative URLs from Soil
 add_theme_support('soil-nice-search');      // Enable /?s= to /search/ redirect from Soil
 add_theme_support('bootstrap-gallery');     // Enable Bootstrap's thumbnails component on [gallery]
 add_theme_support('jquery-cdn');            // Enable to load jQuery from the Google CDN
-//add_theme_support('signup' );               // Enable signup for newsletter calls to actio
+//add_theme_support('signup' );               // Enable signup for newsletter calls to action
 //add_theme_support( 'github' );              // Enable switches for things we don't want on github
 
 /**
@@ -16,6 +16,7 @@ add_theme_support('jquery-cdn');            // Enable to load jQuery from the Go
 define('GOOGLE_ANALYTICS_ID', ''); // UA-XXXXX-Y (Note: Universal Analytics only, not Classic Analytics)
 define('AUTHOR_NAME', 'Justin Chick'); // Who's site is this anyways?!
 define('GOOGLE_PLUS', '117097003018884868034'); // Just the string of numbers
+
 
 
 /**
