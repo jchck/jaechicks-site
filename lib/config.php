@@ -15,6 +15,8 @@ add_theme_support( 'meta-share' );          // Add those share meta tags
  * Configuration values
  */
 define('GOOGLE_ANALYTICS_ID', ''); // UA-XXXXX-Y (Note: Universal Analytics only, not Classic Analytics)
+define('AUTHOR_NAME', 'Justin Chick'); // Who's site is this anyways?!
+define('GOOGLE_PLUS', '117097003018884868034'); // Just the string of numbers 
 
 /**
  * .main classes
