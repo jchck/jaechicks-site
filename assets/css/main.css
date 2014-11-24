@@ -4710,6 +4710,12 @@ p {
 a {
   padding-bottom: 3px;
 }
+img {
+  display: block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+}
 /**
 	This will make SVG's clickable
 	via https://teamtreehouse.com/forum/how-do-you-make-a-svg-clickable
