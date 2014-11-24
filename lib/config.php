@@ -9,6 +9,7 @@ add_theme_support('bootstrap-gallery');     // Enable Bootstrap's thumbnails com
 add_theme_support('jquery-cdn');            // Enable to load jQuery from the Google CDN
 //add_theme_support('signup' );               // Enable signup for newsletter calls to actio
 add_theme_support( 'github' );              // Enable switches for things we don't want on github
+add_theme_support( 'meta-share' );          // Add those share meta tags
 
 /**
  * Configuration values
