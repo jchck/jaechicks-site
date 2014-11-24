@@ -35,8 +35,6 @@ function jaechick_twitter_share() { ?>
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:site" content="@<?php echo TWITTER_NAME; ?>" />
 	<meta property="twitter:creator" content="@<?php echo TWITTER_NAME; ?>" />
-	<meta property="twitter:url" content="<?php echo the_permalink(); ?>" />
-	<meta property="twitter:domain" content="<?php echo esc_url(home_url()); ?>" />
 	<meta property="twitter:title" content="<?php wp_title('|', true, 'right'); ?>" />
 	<meta property="twitter:description" content="<?php echo jaechick_twitter_exerpt($post_id); ?>" />
 <?php }
