@@ -50,7 +50,7 @@ function jaechick_facebook_share(){ ?>
 	<meta property="og:description" content="<?php echo jaechick_social_exerpt($post_id); ?>" />
 	<meta property="og:url" content="<?php echo the_permalink(); ?>" />
 	<meta property="og:site_name" content="<?php echo AUTHOR_NAME; ?>" />
-	<meta property="og:image" content="http://dev-jaechick.slingerlabs.com/wp-content/uploads/2014/08/header_justin_chick-1024x315.jpg" />
+	<meta property="og:image" content="<?php echo get_template_directory_uri() . '/assets/img/jaechick-mirror.jpg'; ?>" />
 <?php }
 if (current_theme_supports( 'facebook-share' )){
 	add_action('wp_head', 'jaechick_facebook_share', 10);
