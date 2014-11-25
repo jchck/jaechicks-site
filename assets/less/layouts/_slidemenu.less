@@ -18,8 +18,11 @@
         @media (max-width: 375px) { //iPhone 6
             min-height: 667px;
         }
-        @media (max-width: 320px) { //iPhone 5
+        @media (max-width: 320px) and (orientation: portrait) { //iPhone 5 portriat
             min-height: 568px;
+        }
+        @media (max-width: 320px) and (orientation: landscape) { //iPhone 5 landscape
+            min-height: 320px;
         }
         background-color: @body-bg;
         background-repeat: no-repeat;
