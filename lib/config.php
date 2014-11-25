@@ -11,6 +11,7 @@ add_theme_support('jquery-cdn');            // Enable to load jQuery from the Go
 //add_theme_support( 'github' );              // Enable switches for things we don't want on github
 add_theme_support( 'twitter-share' );
 add_theme_support( 'facebook-share' );
+add_theme_support( 'favicon' );
 
 /**
  * Configuration values
