@@ -6990,6 +6990,46 @@ header .logo {
     min-height: 320px;
   }
 }
+@media (max-width: 800px) and (orientation: portrait) {
+  .push-wrap {
+    min-height: 1280px;
+  }
+}
+@media (max-width: 384px) and (orientation: portrait) {
+  .push-wrap {
+    min-height: 640px;
+  }
+}
+@media (max-width: 640px) and (orientation: landscape) {
+  .push-wrap {
+    min-height: 384px;
+  }
+}
+@media (max-width: 640px) and (orientation: landscape) {
+  .push-wrap {
+    min-height: 360px;
+  }
+}
+@media (max-width: 604px) and (orientation: portrait) {
+  .push-wrap {
+    min-height: 966px;
+  }
+}
+@media (max-width: 966px) and (orientation: landscape) {
+  .push-wrap {
+    min-height: 604px;
+  }
+}
+@media (max-width: 320px) and (orientation: portrait) {
+  .push-wrap {
+    min-height: 533px;
+  }
+}
+@media (max-width: 533px) and (orientation: landscape) {
+  .push-wrap {
+    min-height: 320px;
+  }
+}
 .push-wrap a.toggle-nav {
   position: absolute;
   font-size: 25px;
