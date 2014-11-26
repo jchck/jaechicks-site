@@ -6945,6 +6945,11 @@ header .logo {
     min-height: 660px;
   }
 }
+@media (max-width: 768px) and (orientation: portrait) {
+  .push-wrap {
+    min-height: 1024px;
+  }
+}
 @media (max-width: 414px) and (orientation: portrait) {
   .push-wrap {
     min-height: 736px;
