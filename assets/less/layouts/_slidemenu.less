@@ -9,26 +9,33 @@
         transition: all 300ms ease 0;
         transform: translate(0, 0);
         transform: translate3d(0, 0, 0);
-
         position: relative;
-        min-height: 660px;
-        @media (max-width: 414px) { //iPhone 6+
-            min-height: 736px;
-        }
-        @media (max-width: 375px) { //iPhone 6
-            min-height: 667px;
-        }
-        @media (max-width: 320px) and (orientation: portrait) { //iPhone 5 portriat
-            min-height: 568px;
-        }
-        @media (max-width: 320px) and (orientation: landscape) { //iPhone 5 landscape
-            min-height: 320px;
-        }
         background-color: @body-bg;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 0;
         width: 100%;
+
+        min-height: 660px;
+    }
+
+    @media (max-width: 414px) and (orientation: portrait) { //iPhone 6+ portrait
+        min-height: 736px;
+    }
+    @media (max-width: 736px) and (orientation: landscape) { //iPhone 6+ landscape
+        min-height: 414px;
+    }
+    @media (max-width: 375px) and (orientation: portrait) { //iPhone 6 portrait
+        min-height: 667px;
+    }
+    @media (max-width: 667px) and (orientation: landscape) { //iPhone 6 landscape
+        min-height: 375px;
+    }
+    @media (max-width: 320px) and (orientation: portrait) { //iPhone 5 portrait
+        min-height: 568px;
+    }
+    @media (max-width: 568px) and (orientation: landscape) { //iPhone 5 landscape
+        min-height: 320px;
     }
 
     a.toggle-nav{

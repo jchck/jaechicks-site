@@ -6936,31 +6936,41 @@ header .logo {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
     position: relative;
-    min-height: 660px;
     background-color: #ffffff;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
             background-size: cover;
     background-position: 50% 0;
     width: 100%;
+    min-height: 660px;
   }
 }
-@media (max-width: 992px) and (max-width: 414px) {
+@media (max-width: 414px) and (orientation: portrait) {
   .push-wrap {
     min-height: 736px;
   }
 }
-@media (max-width: 992px) and (max-width: 375px) {
+@media (max-width: 736px) and (orientation: landscape) {
+  .push-wrap {
+    min-height: 414px;
+  }
+}
+@media (max-width: 375px) and (orientation: portrait) {
   .push-wrap {
     min-height: 667px;
   }
 }
-@media (max-width: 992px) and (max-width: 320px) and (orientation: portrait) {
+@media (max-width: 667px) and (orientation: landscape) {
+  .push-wrap {
+    min-height: 375px;
+  }
+}
+@media (max-width: 320px) and (orientation: portrait) {
   .push-wrap {
     min-height: 568px;
   }
 }
-@media (max-width: 992px) and (max-width: 320px) and (orientation: landscape) {
+@media (max-width: 568px) and (orientation: landscape) {
   .push-wrap {
     min-height: 320px;
   }
