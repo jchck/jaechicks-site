@@ -6975,6 +6975,16 @@ header .logo {
     min-height: 320px;
   }
 }
+@media (max-width: 320px) and (orientation: portrait) {
+  .push-wrap {
+    min-height: 480px;
+  }
+}
+@media (max-width: 480px) and (orientation: landscape) {
+  .push-wrap {
+    min-height: 320px;
+  }
+}
 .push-wrap a.toggle-nav {
   position: absolute;
   font-size: 25px;
