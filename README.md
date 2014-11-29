@@ -1,4 +1,4 @@
-[# My Theme](http://justinchick.com)
+# [My Theme](http://justinchick.com)
 
 My Theme is a WordPress theme built on the [Root’s starter theme](http://roots.io/).
 
