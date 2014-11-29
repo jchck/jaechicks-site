@@ -3,10 +3,10 @@
 node_modules
 assets/vendor/*
 assets/css/main.css.map
-#assets/css/*main*.css
-#assets/js/*scripts*.js
+# assets/css/*main*.css
+# assets/js/*scripts*.js
 assets/js/vendor/modernizr.min.js
 assets/manifest.json
 .DS_Store
-#assets/img/jaechick-logo.png
-#assets/img/logo.svg
+# assets/img/jaechick-logo.png
+# assets/img/logo.svg
