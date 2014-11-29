@@ -2,6 +2,11 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 node_modules
 assets/vendor/*
+!assets/vendor/font-awesome*
+assets/vendor/font-awesome/css
+assets/vendor/font-awesome/less
+assets/vendor/font-awesome/scss
+!assets/vendor/font-awesome/fonts*
 assets/css/main.css.map
 # assets/css/*main*.css
 # assets/js/*scripts*.js
