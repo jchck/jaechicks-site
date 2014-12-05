@@ -7,7 +7,7 @@ assets/vendor/font-awesome/css
 assets/vendor/font-awesome/less
 assets/vendor/font-awesome/scss
 !assets/vendor/font-awesome/fonts*
-assets/css/main.css.map
+# assets/css/main.css.map
 # assets/css/*main*.css
 # assets/js/*scripts*.js
 assets/js/vendor/modernizr.min.js

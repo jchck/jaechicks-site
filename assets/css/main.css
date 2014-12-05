@@ -773,7 +773,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 970px;
+    width: 1170px;
   }
 }
 .container-fluid {
@@ -2553,6 +2553,8 @@ input[type="button"].btn-block {
 .row:after,
 .form-horizontal .form-group:before,
 .form-horizontal .form-group:after,
+.ginput_complex:before,
+.ginput_complex:after,
 .content-info:before,
 .content-info:after,
 .notebook-entry:before,
@@ -2566,6 +2568,7 @@ input[type="button"].btn-block {
 .container-fluid:after,
 .row:after,
 .form-horizontal .form-group:after,
+.ginput_complex:after,
 .content-info:after,
 .notebook-entry:after {
   clear: both;
@@ -2814,6 +2817,495 @@ input[type="button"].btn-block {
 @media print {
   .hidden-print {
     display: none !important;
+  }
+}
+/**
+	Z Indexes
+**/
+/**
+	Easing
+**/
+/**
+	Background Opacity 
+**/
+/**
+	Border Bottom Gradient
+**/
+/**
+	Call to Action with Pop
+**/
+.cta-primary {
+  background: #ff4242;
+  border-color: #f40000;
+}
+.cta-primary a,
+.cta-primary p,
+.cta-primary h1,
+.cta-primary h2,
+.cta-primary h3,
+.cta-primary h4,
+.cta-primary h5,
+.cta-primary h6 {
+  color: #eeeeee;
+}
+.cta-primary:hover {
+  background: #f40000;
+  border-color: #ff4242;
+}
+.cta-primary:hover a,
+.cta-primary:hover p,
+.cta-primary:hover h1,
+.cta-primary:hover h2,
+.cta-primary:hover h3,
+.cta-primary:hover h4,
+.cta-primary:hover h5,
+.cta-primary:hover h6 {
+  color: #515151;
+}
+.cta-success {
+  background: #5cb85c;
+  border-color: #3d8b3d;
+}
+.cta-success a,
+.cta-success p,
+.cta-success h1,
+.cta-success h2,
+.cta-success h3,
+.cta-success h4,
+.cta-success h5,
+.cta-success h6 {
+  color: #eeeeee;
+}
+.cta-success:hover {
+  background: #3d8b3d;
+  border-color: #5cb85c;
+}
+.cta-success:hover a,
+.cta-success:hover p,
+.cta-success:hover h1,
+.cta-success:hover h2,
+.cta-success:hover h3,
+.cta-success:hover h4,
+.cta-success:hover h5,
+.cta-success:hover h6 {
+  color: #515151;
+}
+.cta-info {
+  background: #5bc0de;
+  border-color: #28a1c5;
+}
+.cta-info a,
+.cta-info p,
+.cta-info h1,
+.cta-info h2,
+.cta-info h3,
+.cta-info h4,
+.cta-info h5,
+.cta-info h6 {
+  color: #eeeeee;
+}
+.cta-info:hover {
+  background: #28a1c5;
+  border-color: #5bc0de;
+}
+.cta-info:hover a,
+.cta-info:hover p,
+.cta-info:hover h1,
+.cta-info:hover h2,
+.cta-info:hover h3,
+.cta-info:hover h4,
+.cta-info:hover h5,
+.cta-info:hover h6 {
+  color: #515151;
+}
+.cta-warning {
+  background: #f0ad4e;
+  border-color: #df8a13;
+}
+.cta-warning a,
+.cta-warning p,
+.cta-warning h1,
+.cta-warning h2,
+.cta-warning h3,
+.cta-warning h4,
+.cta-warning h5,
+.cta-warning h6 {
+  color: #eeeeee;
+}
+.cta-warning:hover {
+  background: #df8a13;
+  border-color: #f0ad4e;
+}
+.cta-warning:hover a,
+.cta-warning:hover p,
+.cta-warning:hover h1,
+.cta-warning:hover h2,
+.cta-warning:hover h3,
+.cta-warning:hover h4,
+.cta-warning:hover h5,
+.cta-warning:hover h6 {
+  color: #515151;
+}
+.cta-danger {
+  background: #d9534f;
+  border-color: #b52b27;
+}
+.cta-danger a,
+.cta-danger p,
+.cta-danger h1,
+.cta-danger h2,
+.cta-danger h3,
+.cta-danger h4,
+.cta-danger h5,
+.cta-danger h6 {
+  color: #eeeeee;
+}
+.cta-danger:hover {
+  background: #b52b27;
+  border-color: #d9534f;
+}
+.cta-danger:hover a,
+.cta-danger:hover p,
+.cta-danger:hover h1,
+.cta-danger:hover h2,
+.cta-danger:hover h3,
+.cta-danger:hover h4,
+.cta-danger:hover h5,
+.cta-danger:hover h6 {
+  color: #515151;
+}
+::-moz-selection {
+  color: #ffffff;
+  background: #515151;
+}
+::selection {
+  color: #ffffff;
+  background: #515151;
+}
+a {
+  -webkit-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+p {
+  line-height: 1.90476191;
+}
+a {
+  padding-bottom: 3px;
+}
+li {
+  margin-bottom: 14px;
+}
+img {
+  display: block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+}
+/**
+	This will make SVG's clickable
+	via https://teamtreehouse.com/forum/how-do-you-make-a-svg-clickable
+**/
+a.svg {
+  position: relative;
+  display: inline-block;
+}
+a.svg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.gform_wrapper ul {
+  padding-left: 0;
+}
+.gform_wrapper li {
+  margin-bottom: 15px;
+  list-style: none;
+}
+.gform_wrapper form {
+  margin-bottom: 0;
+}
+.gform_wrapper .gfield_required {
+  padding-left: 1px;
+  color: #a94442;
+}
+.ginput_container input,
+.ginput_container select,
+.ginput_container textarea {
+  display: block;
+  width: 100%;
+  height: 42px;
+  padding: 6px 12px;
+  font-size: 20px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.ginput_container input:focus,
+.ginput_container select:focus,
+.ginput_container textarea:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.ginput_container input::-moz-placeholder,
+.ginput_container select::-moz-placeholder,
+.ginput_container textarea::-moz-placeholder {
+  color: #777777;
+  opacity: 1;
+}
+.ginput_container input:-ms-input-placeholder,
+.ginput_container select:-ms-input-placeholder,
+.ginput_container textarea:-ms-input-placeholder {
+  color: #777777;
+}
+.ginput_container input::-webkit-input-placeholder,
+.ginput_container select::-webkit-input-placeholder,
+.ginput_container textarea::-webkit-input-placeholder {
+  color: #777777;
+}
+.ginput_container input[disabled],
+.ginput_container select[disabled],
+.ginput_container textarea[disabled],
+.ginput_container input[readonly],
+.ginput_container select[readonly],
+.ginput_container textarea[readonly],
+fieldset[disabled] .ginput_container input,
+fieldset[disabled] .ginput_container select,
+fieldset[disabled] .ginput_container textarea {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+  opacity: 1;
+}
+textarea.ginput_container input,
+textarea.ginput_container select,
+textarea.ginput_container textarea {
+  height: auto;
+}
+.ginput_container textarea {
+  height: auto;
+}
+.gform_button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 20px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #ff4242;
+  border-color: #ff2828;
+}
+.gform_button:focus,
+.gform_button:active:focus,
+.gform_button.active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.gform_button:hover,
+.gform_button:focus {
+  color: #333333;
+  text-decoration: none;
+}
+.gform_button:active,
+.gform_button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.gform_button.disabled,
+.gform_button[disabled],
+fieldset[disabled] .gform_button {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.gform_button:hover,
+.gform_button:focus,
+.gform_button:active,
+.gform_button.active,
+.open > .dropdown-toggle.gform_button {
+  color: #ffffff;
+  background-color: #ff0f0f;
+  border-color: #ea0000;
+}
+.gform_button:active,
+.gform_button.active,
+.open > .dropdown-toggle.gform_button {
+  background-image: none;
+}
+.gform_button.disabled,
+.gform_button[disabled],
+fieldset[disabled] .gform_button,
+.gform_button.disabled:hover,
+.gform_button[disabled]:hover,
+fieldset[disabled] .gform_button:hover,
+.gform_button.disabled:focus,
+.gform_button[disabled]:focus,
+fieldset[disabled] .gform_button:focus,
+.gform_button.disabled:active,
+.gform_button[disabled]:active,
+fieldset[disabled] .gform_button:active,
+.gform_button.disabled.active,
+.gform_button[disabled].active,
+fieldset[disabled] .gform_button.active {
+  background-color: #ff4242;
+  border-color: #ff2828;
+}
+.gform_button .badge {
+  color: #ff4242;
+  background-color: #ffffff;
+}
+.gform_wrapper .gfield_error .gfield_label {
+  color: #a94442;
+}
+.gform_wrapper .gfield_error input,
+.gform_wrapper .gfield_error select,
+.gform_wrapper .gfield_error textarea {
+  border-color: #ebccd1;
+  background-color: #f2dede;
+  color: #a94442;
+}
+.gform_wrapper .gfield_error input:focus,
+.gform_wrapper .gfield_error select:focus,
+.gform_wrapper .gfield_error textarea:focus {
+  border-color: #a94442;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(169, 68, 66, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(169, 68, 66, 0.6);
+}
+.validation_error {
+  padding: 15px;
+  margin-bottom: 28px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+.validation_error h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.validation_error .alert-link {
+  font-weight: bold;
+}
+.validation_error > p,
+.validation_error > ul {
+  margin-bottom: 0;
+}
+.validation_error > p + p {
+  margin-top: 5px;
+}
+.validation_error hr {
+  border-top-color: #e4b9c0;
+}
+.validation_error .alert-link {
+  color: #843534;
+}
+#gforms_confirmation_message {
+  padding: 15px;
+  margin-bottom: 28px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+#gforms_confirmation_message h4 {
+  margin-top: 0;
+  color: inherit;
+}
+#gforms_confirmation_message .alert-link {
+  font-weight: bold;
+}
+#gforms_confirmation_message > p,
+#gforms_confirmation_message > ul {
+  margin-bottom: 0;
+}
+#gforms_confirmation_message > p + p {
+  margin-top: 5px;
+}
+#gforms_confirmation_message hr {
+  border-top-color: #c9e2b3;
+}
+#gforms_confirmation_message .alert-link {
+  color: #2b542c;
+}
+.ginput_container input[type=radio],
+.ginput_container input[type=checkbox] {
+  height: inherit;
+  width: inherit !important;
+  display: inline-block;
+}
+.gfield_radio label {
+  padding-left: 10px;
+}
+.gfield_checkbox label {
+  padding-left: 10px;
+}
+.ginput_complex {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.ginput_complex .ginput_full {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .ginput_complex .ginput_full {
+    float: left;
+    width: 100%;
+  }
+}
+.ginput_complex .ginput_right,
+.ginput_complex .ginput_left {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .ginput_complex .ginput_right,
+  .ginput_complex .ginput_left {
+    float: left;
+    width: 50%;
   }
 }
 /*!
@@ -4924,6 +5416,16 @@ header .logo {
   position: absolute;
   z-index: -1;
 }
+.bg:after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
 .bg.bg:after {
   -webkit-background-size: cover;
           background-size: cover;
@@ -5275,7 +5777,7 @@ footer {
 }
 @media (min-width: 1200px) {
   .content-info {
-    width: 970px;
+    width: 1170px;
   }
 }
 .foot-across {
