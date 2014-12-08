@@ -15,5 +15,4 @@ Roots is a WordPress starter theme based on [HTML5 Boilerplate](http://html5boil
 * [Fluidbox](http://terrymun.github.io/Fluidbox/)
 * Off canvas mobile navigation
 * [Our Collective Base Styles](https://github.com/jaechick/Our-Collective-Base-Styles)
-
-
+* [Prism](http://prismjs.com/index.html)
