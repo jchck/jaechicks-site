@@ -5319,9 +5319,11 @@ figure.alignnone {
 }
 ::-moz-selection {
   color: #ff4242;
+  background: none;
 }
 ::selection {
   color: #ff4242;
+  background: none;
 }
 main a {
   border-bottom: 1px solid #ff4242;
