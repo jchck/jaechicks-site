@@ -25,6 +25,7 @@ $roots_includes = array(
   'lib/cpt.php',             // Register custom post types for portfolio
   'lib/shortcodes.php',      // Register some shortcodes
   'lib/meta-share.php',
+  'mandrill/settings.php',
 );
 
 foreach ($roots_includes as $file) {
