@@ -3,7 +3,7 @@
 	<div class="content-info" role="contentinfo">
 	  <div class="row">
 	  	<div class="foot-across">
-	  		<?php if (!is_page_template( 'landing' )){ ?>
+	  		<?php if (!is_page_template( 'template-landing.php' )){ ?>
 	  		<ul class="list-inline">
 	  			<li><a href="https://www.linkedin.com/in/justinchick" target="_blank" title="Justin Chick on LinkedIn"><i class="fa fa-linkedin"></i></a></li>
 	  			<li><a href="http://twitter.com/jaechick" target="_blank" title="Follow Justin Chick on Twitter"><i class="fa fa-twitter"></i></a></li>
