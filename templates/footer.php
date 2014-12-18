@@ -13,6 +13,9 @@
 		  		<?php if (current_theme_supports('signup' )) { ?>
 		  			<p class="signup"><a href="<?php echo home_url( 'signup' ); ?>">Did you know I have a weekly newsletter?</a></p>
 		  		<?php } ?>
+		  		<?php if (current_theme_supports( 'work-together' )) { ?>
+		  			<p class="signup"><a href="<?php echo home_url( 'lets-work-together' ); ?>">Do you want to work together?</a></p>
+		  		<?php } ?>
 	  		<?php } ?>
 	  		<p class="credit"><a href="<?php echo home_url(); ?>" title="Justin Chick is a WordPress developer in St. Louis MO">Made in STL</a> by <a href="<?php echo home_url( 'biography' ); ?>" title="Justin Chick is a WordPress consultant, designer, developer, project manager">Justin Chick</a> | <a href="<?php echo home_url( 'colophon' ); ?>">Colophon</a></p>
 	  		<p class="credit">&copy; <?php the_date( Y ); ?></p>
