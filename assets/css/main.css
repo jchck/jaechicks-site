@@ -3255,6 +3255,23 @@ fieldset[disabled] .gform_button.active {
     width: 50%;
   }
 }
+/*
+ *
+ * @link http://scotch.io/bar-talk/bootstrap-3-tips-and-tricks-you-might-not-know#how-to-enable-bootstrap-3-hover-dropdowns
+ *
+ */
+@media screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+/*
+ * See http://scotch.io/bar-talk/bootstrap-3-tips-and-tricks-you-still-might-not-know#optionally-remove-the-gutter-padding-from-columns
+ */
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
