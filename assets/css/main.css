@@ -6020,7 +6020,7 @@ footer {
 }
 .ad-space .ad-container {
   background: #515151;
-  padding: 5px;
+  padding: 5px 15px 5px 5px;
   -webkit-transition: all 0.3s ease-in-out;
        -o-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
@@ -6055,7 +6055,14 @@ footer {
 }
 .ad-space .ad-description p {
   font-size: 15px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
+  line-height: 1.4;
+}
+.ad-space .ad-description .table {
+  height: 124px;
+}
+.ad-space .ad-description .table div {
+  vertical-align: middle;
 }
 .hentry .page-header h1:before {
   margin-right: 5px;

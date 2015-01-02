@@ -7,7 +7,11 @@
 						<img src="<?php echo get_template_directory_uri() . '/assets/img/oc-logo.png'; ?>" />
 					</div>
 					<div class="ad-description">
-						<p>Let's Work Together!</p>
+						<div class="table">
+							<div>
+								<p>Let's Work Together<br />I'm a partner and Director of Stragety at<br />Our Collective</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</a>
@@ -21,7 +25,11 @@
 						<img src="<?php echo get_template_directory_uri() . '/assets/img/treehouse-logo.png'; ?>" />
 					</div>
 					<div class="ad-description">
-						<p>Let's Learn</p>
+						<div class="table">
+							<div>
+								<p>Treehouse is my favorite resource for improving my web development skills</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</a>
