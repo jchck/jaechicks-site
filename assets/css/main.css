@@ -5989,6 +5989,9 @@ footer {
   font-size: 15px;
   color: #6a6a6a;
 }
+.foot-across .credit:first-of-type {
+  margin-top: 25px;
+}
 .foot-across .credit a {
   color: #6a6a6a;
 }
