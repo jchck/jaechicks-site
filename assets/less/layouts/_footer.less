@@ -50,6 +50,11 @@ footer{
 		.ad-container{
 			background: @gray-dark;
 			padding: 5px;
+			.ease-in-out(.3s);
+
+			&:hover{
+				background: lighten(@gray-dark, 10%);
+			}
 		}
 		.img-container{
 			.make-sm-column(5);
@@ -59,6 +64,7 @@ footer{
 			.make-sm-column(7);
 				p{
 					font-size: 15px;
+					margin-bottom: 8px
 				}
 		}
 }

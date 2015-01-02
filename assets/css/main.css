@@ -6020,6 +6020,12 @@ footer {
 .ad-space .ad-container {
   background: #515151;
   padding: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+.ad-space .ad-container:hover {
+  background: #6a6a6a;
 }
 .ad-space .img-container {
   position: relative;
@@ -6048,6 +6054,7 @@ footer {
 }
 .ad-space .ad-description p {
   font-size: 15px;
+  margin-bottom: 8px;
 }
 .hentry .page-header h1:before {
   margin-right: 5px;

@@ -1,13 +1,13 @@
 <div class="row">
 	<div class="ad-space">
 		<div class="ad-container">
-			<a href="#">
+			<a href="http://ourcollective.is" target="_blank" title="Our Collecitve St. Louis">
 				<div class="row">
 					<div class="img-container">
 						<img src="<?php echo get_template_directory_uri() . '/assets/img/oc-logo.png'; ?>" />
 					</div>
 					<div class="ad-description">
-						<p>Let's Work Together! Okay</p>
+						<p>Let's Work Together!</p>
 					</div>
 				</div>
 			</a>
