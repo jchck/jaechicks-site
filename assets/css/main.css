@@ -5988,47 +5988,49 @@ footer {
 .foot-across .list-inline {
   text-align: center;
 }
-.foot-across .ad-space {
+.ad-space {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .foot-across .ad-space {
+  .ad-space {
     float: left;
     width: 50%;
   }
 }
-.foot-across .ad-space .ad-container {
+.ad-space .ad-container {
   background: #515151;
   padding: 5px;
 }
-.foot-across .ad-space a:before,
-.foot-across .ad-space a:after {
-  content: " ";
-  display: table;
+.ad-space .img-container {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.foot-across .ad-space a:after {
-  clear: both;
+@media (min-width: 768px) {
+  .ad-space .img-container {
+    float: left;
+    width: 41.66666667%;
+  }
 }
-.foot-across .ad-space a:before,
-.foot-across .ad-space a:after {
-  content: " ";
-  display: table;
-}
-.foot-across .ad-space a:after {
-  clear: both;
-}
-.foot-across .ad-space img {
-  max-width: 50%;
-  float: left !important;
-  float: left;
-}
-.foot-across .ad-space .ad-description {
+.ad-space .ad-description {
   color: #eeeeee;
-  float: right !important;
-  float: right;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .ad-space .ad-description {
+    float: left;
+    width: 58.33333333%;
+  }
+}
+.ad-space .ad-description p {
+  font-size: 15px;
 }
 .hentry .page-header h1:before {
   margin-right: 5px;

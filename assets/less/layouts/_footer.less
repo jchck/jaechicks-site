@@ -43,25 +43,23 @@ footer{
 		.list-inline{
 			text-align: center;
 		}
-
-	.ad-space{
-		.make-sm-column(6);
-			.ad-container{
-				background: @gray-dark;
-				padding: 5px;
-				//.clearfix();
-			}
-			a{
-				.clearfix();
-			}
-			img{
-				max-width: 50%;
-				.pull-left();
-			}
-			.ad-description{
-				color: @off-white;
-				.pull-right();
-				//.clearfix();
-			}
-	}
 }
+
+.ad-space{
+	.make-sm-column(6);
+		.ad-container{
+			background: @gray-dark;
+			padding: 5px;
+		}
+		.img-container{
+			.make-sm-column(5);
+		}
+		.ad-description{
+			color: @off-white;
+			.make-sm-column(7);
+				p{
+					font-size: 15px;
+				}
+		}
+}
+

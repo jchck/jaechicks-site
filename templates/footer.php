@@ -17,28 +17,7 @@
 		  			<?php if (! is_page_template( 'template-notebook.php' )) { ?>
 		  				<p class="signup"><a href="<?php echo home_url( 'lets-work-together' ); ?>">Do you want to work together?</a></p>
 		  			<? } else { ?>
-		  				<div class="row">
-		  					<div class="ad-space">
-		  						<div class="ad-container">
-			  						<a href="http://ourcollective.is" target="_blank">
-			  							<img src="<?php echo get_template_directory_uri() . '/assets/img/oc-logo.png'; ?>" />
-			  							<div class="ad-description">
-			  								<p>Let's Work</p>
-			  							</div>
-			  						</a>
-			  					</div>
-		  					</div>
-		  					<div class="ad-space">
-		  						<div class="ad-container">
-			  						<a class="thumbnail" href="http://referrals.trhou.se/justinchick" target="_blank">
-			  							<img src="<?php echo get_template_directory_uri() . '/assets/img/treehouse-logo.png'; ?>" />
-				  						<div class="ad-description">
-				  							<p>Let's Learn</p>
-				  						</div>
-			  						</a>
-		  						</div>
-		  					</div>
-		  				</div>
+		  				<?php get_template_part( 'templates/ad', 'space' ); ?>
 		  			<?php } ?>
 		  			
 		  		<?php } ?>
