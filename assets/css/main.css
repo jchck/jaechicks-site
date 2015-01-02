@@ -6000,9 +6000,35 @@ footer {
     width: 50%;
   }
 }
+.foot-across .ad-space .ad-container {
+  background: #515151;
+  padding: 5px;
+}
+.foot-across .ad-space a:before,
+.foot-across .ad-space a:after {
+  content: " ";
+  display: table;
+}
+.foot-across .ad-space a:after {
+  clear: both;
+}
+.foot-across .ad-space a:before,
+.foot-across .ad-space a:after {
+  content: " ";
+  display: table;
+}
+.foot-across .ad-space a:after {
+  clear: both;
+}
 .foot-across .ad-space img {
   max-width: 50%;
-  margin: 0 auto;
+  float: left !important;
+  float: left;
+}
+.foot-across .ad-space .ad-description {
+  color: #eeeeee;
+  float: right !important;
+  float: right;
 }
 .hentry .page-header h1:before {
   margin-right: 5px;

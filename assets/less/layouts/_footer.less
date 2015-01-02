@@ -46,9 +46,22 @@ footer{
 
 	.ad-space{
 		.make-sm-column(6);
+			.ad-container{
+				background: @gray-dark;
+				padding: 5px;
+				//.clearfix();
+			}
+			a{
+				.clearfix();
+			}
 			img{
 				max-width: 50%;
-				margin: 0 auto;
+				.pull-left();
+			}
+			.ad-description{
+				color: @off-white;
+				.pull-right();
+				//.clearfix();
 			}
 	}
 }

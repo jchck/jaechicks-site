@@ -19,14 +19,24 @@
 		  			<? } else { ?>
 		  				<div class="row">
 		  					<div class="ad-space">
-		  						<a href="http://ourcollective.is" target="_blank">
-		  							<img src="<?php echo get_template_directory_uri() . '/assets/img/oc-logo.png'; ?>" />
-		  						</a>
+		  						<div class="ad-container">
+			  						<a href="http://ourcollective.is" target="_blank">
+			  							<img src="<?php echo get_template_directory_uri() . '/assets/img/oc-logo.png'; ?>" />
+			  							<div class="ad-description">
+			  								<p>Let's Work</p>
+			  							</div>
+			  						</a>
+			  					</div>
 		  					</div>
 		  					<div class="ad-space">
-		  						<a href="http://referrals.trhou.se/justinchick" target="_blank">
-		  							<img src="<?php echo get_template_directory_uri() . '/assets/img/treehouse-logo.png'; ?>" />
-		  						</a>
+		  						<div class="ad-container">
+			  						<a class="thumbnail" href="http://referrals.trhou.se/justinchick" target="_blank">
+			  							<img src="<?php echo get_template_directory_uri() . '/assets/img/treehouse-logo.png'; ?>" />
+				  						<div class="ad-description">
+				  							<p>Let's Learn</p>
+				  						</div>
+			  						</a>
+		  						</div>
 		  					</div>
 		  				</div>
 		  			<?php } ?>
