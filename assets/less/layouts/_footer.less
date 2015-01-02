@@ -71,10 +71,16 @@ footer{
 					font-size: 15px;
 					margin-bottom: 0px;
 					line-height: 1.4;
+					@media screen and (min-width: @screen-xs-min) {
+						font-size: 13px;
+					}
 				}
 
 			.table{
 				height: 124px;
+				@media screen and (min-width: @screen-xs-min) {
+					height: 96px;
+				}
 				div{
 					vertical-align: middle;
 				}

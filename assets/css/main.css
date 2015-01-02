@@ -6062,8 +6062,18 @@ footer {
   margin-bottom: 0px;
   line-height: 1.4;
 }
+@media screen and (min-width: 480px) {
+  .ad-space .ad-description p {
+    font-size: 13px;
+  }
+}
 .ad-space .ad-description .table {
   height: 124px;
+}
+@media screen and (min-width: 480px) {
+  .ad-space .ad-description .table {
+    height: 96px;
+  }
 }
 .ad-space .ad-description .table div {
   vertical-align: middle;
