@@ -6012,15 +6012,11 @@ footer {
 }
 .ad-space {
   position: relative;
+  float: left;
+  width: 50%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .ad-space {
-    float: left;
-    width: 50%;
-  }
 }
 .ad-space .ad-container {
   background: #515151;
@@ -6028,6 +6024,11 @@ footer {
   -webkit-transition: all 0.3s ease-in-out;
        -o-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 992px) {
+  .ad-space .ad-container {
+    padding: 5px;
+  }
 }
 .ad-space .ad-container:hover {
   background: #6a6a6a;
@@ -6038,7 +6039,7 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .ad-space .img-container {
     float: left;
     width: 41.66666667%;
@@ -6051,7 +6052,7 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .ad-space .ad-description {
     float: left;
     width: 58.33333333%;
@@ -6062,7 +6063,7 @@ footer {
   margin-bottom: 0px;
   line-height: 1.4;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1200px) {
   .ad-space .ad-description p {
     font-size: 13px;
   }
@@ -6070,7 +6071,7 @@ footer {
 .ad-space .ad-description .table {
   height: 124px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1200px) {
   .ad-space .ad-description .table {
     height: 96px;
   }

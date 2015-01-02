@@ -51,34 +51,37 @@ footer{
 }
 
 .ad-space{
-	.make-sm-column(6);
+	.make-xs-column(6);
 		.ad-container{
 			background: @gray-dark;
 			padding: 5px 15px 5px 5px;
 			.ease-in-out(.3s);
+			@media screen and (max-width: @screen-md-min) {
+				padding: 5px;
+			}
 
 			&:hover{
 				background: lighten(@gray-dark, 10%);
 			}
 		}
 		.img-container{
-			.make-sm-column(5);
+			.make-md-column(5);
 		}
 		.ad-description{
 			color: @off-white;
-			.make-sm-column(7);
+			.make-md-column(7);
 				p{
 					font-size: 15px;
 					margin-bottom: 0px;
 					line-height: 1.4;
-					@media screen and (min-width: @screen-xs-min) {
+					@media screen and (max-width: @screen-lg-min) {
 						font-size: 13px;
 					}
 				}
 
 			.table{
 				height: 124px;
-				@media screen and (min-width: @screen-xs-min) {
+				@media screen and (max-width: @screen-lg-min) {
 					height: 96px;
 				}
 				div{
