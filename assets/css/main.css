@@ -5964,7 +5964,7 @@ footer {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 @media (min-width: 768px) {
@@ -6008,6 +6008,7 @@ footer {
 .foot-across .list-inline {
   text-align: center;
   font-size: 25px;
+  margin-bottom: 30px;
 }
 .ad-space {
   position: relative;
@@ -6111,7 +6112,7 @@ footer {
 }
 main,
 main .hentry header.page-header {
-  margin-bottom: 30px;
+  margin-bottom: 90px;
 }
 main:hover h1:before,
 main .hentry header.page-header:hover h1:before,
