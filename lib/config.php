@@ -23,7 +23,7 @@ define('GOOGLE_PLUS', '117097003018884868034'); // Just the string of numbers
 define('TWITTER_NAME', 'jaechick'); // Just your Twitter name, be sure to turn on via add_theme_support above
 
 if (!defined('WP_ENV')) {
-  define('WP_ENV', 'production');  // scripts.php checks for values 'production' or 'development'
+  define('WP_ENV', 'development');  // scripts.php checks for values 'production' or 'development'
 }
 
 
