@@ -1,13 +1,7 @@
 <?php get_template_part('templates/page', 'header'); ?>
 
-<div class="alert alert-warning">
-  <?php _e('Sorry, but the page you were trying to view does not exist.', 'roots'); ?>
-</div>
+<p><?php _e('Just uh'); ?></p>
+<p><?php _e('Take a breath'); ?></p>
+<p><?php _e('Looks like it ain\'t here, man'); ?></p>
 
-<p><?php _e('It looks like this was the result of either:', 'roots'); ?></p>
-<ul>
-  <li><?php _e('a mistyped address', 'roots'); ?></li>
-  <li><?php _e('an out-of-date link', 'roots'); ?></li>
-</ul>
-
-<?php get_search_form(); ?>
+<a class="btn btn-outline btn-large" href="<?php echo home_url();?>">Wanna go back home?</a>

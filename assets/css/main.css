@@ -6184,6 +6184,33 @@ main .hentry header.page-header p:last-child {
     font-size: 17px;
   }
 }
+.error404 {
+  background-image: url('../../assets/img/say-what.gif');
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.error404 .content {
+  max-width: 100%;
+}
+.error404 .page-header h2 {
+  color: white;
+  text-align: left;
+  font-family: "Over the Rainbow", Georgia, serif;
+  font-size: 52px;
+}
+.error404 p,
+.error404 .btn {
+  color: #eeeeee;
+}
+.error404 .btn:hover {
+  color: #383838;
+}
+.error404 li {
+  list-style: none;
+}
+.error404 footer a:hover {
+  background: transparent;
+}
 .home .bg {
   position: absolute;
 }
