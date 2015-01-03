@@ -1503,6 +1503,7 @@ head.appendChild(style);
 
 $(function () {
     $('.entry-content p a').fluidbox();
+    $('.entry-content .row a').fluidbox();
 });;/* ========================================================================
  * DOM-based Routing
  * Based on http://goo.gl/EUTi53 by Paul Irish
