@@ -49,7 +49,54 @@ function jaechick_book_genres() {
 
 add_action( 'init', 'jaechick_book_genres' );
 
-//register_taxonomy_for_object_type( 'genere', 'books' );
+/**
+ * Create a taxonomy
+ *
+ * @uses  Inserts new taxonomy object into the list
+ * @uses  Adds query vars
+ *
+ * @param string  Name of taxonomy object
+ * @param array|string  Name of the object type for the taxonomy object.
+ * @param array|string  Taxonomy arguments
+ * @return null|WP_Error WP_Error if errors, otherwise null.
+ */
+function jaechick_book_authors() {
+
+	$labels = array(
+		'name'					=> _x( 'Authors', 'Taxonomy plural name', 'text-domain' ),
+		'singular_name'			=> _x( 'Author', 'Taxonomy singular name', 'text-domain' ),
+		'search_items'			=> __( 'Search Authors', 'text-domain' ),
+		'popular_items'			=> __( 'Popular Authors', 'text-domain' ),
+		'all_items'				=> __( 'All Authors', 'text-domain' ),
+		'parent_item'			=> __( 'Parent Author', 'text-domain' ),
+		'parent_item_colon'		=> __( 'Parent Author', 'text-domain' ),
+		'edit_item'				=> __( 'Edit Author', 'text-domain' ),
+		'update_item'			=> __( 'Update Author', 'text-domain' ),
+		'add_new_item'			=> __( 'Add New Author', 'text-domain' ),
+		'new_item_name'			=> __( 'New Author Name', 'text-domain' ),
+		'add_or_remove_items'	=> __( 'Add or remove Authors', 'text-domain' ),
+		'choose_from_most_used'	=> __( 'Choose from most used text-domain', 'text-domain' ),
+		'menu_name'				=> __( 'Author', 'text-domain' ),
+	);
+
+	$args = array(
+		'labels'            => $labels,
+		'public'            => true,
+		'show_in_nav_menus' => false,
+		'show_admin_column' => true,
+		'hierarchical'      => true,
+		'show_tagcloud'     => false,
+		'show_ui'           => true,
+		'query_var'         => true,
+		'rewrite'           => true,
+		'query_var'         => true,
+		'capabilities'      => array(),
+	);
+
+	register_taxonomy( 'author', array( 'books' ), $args );
+}
+
+add_action( 'init', 'jaechick_book_authors' );
 
 /**
 * Registers a new post type
@@ -96,7 +143,7 @@ function jaechick_books() {
 		'rewrite'             => true,
 		'capability_type'     => 'post',
 		'supports'            => array(
-			'title', 'editor')
+			'title')
 	);
 
 	register_post_type( 'books', $args );
