@@ -1,6 +1,57 @@
 <?php 
 
 /**
+ * Create a taxonomy
+ *
+ * @uses  Inserts new taxonomy object into the list
+ * @uses  Adds query vars
+ *
+ * @param string  Name of taxonomy object
+ * @param array|string  Name of the object type for the taxonomy object.
+ * @param array|string  Taxonomy arguments
+ * @return null|WP_Error WP_Error if errors, otherwise null.
+ */
+function jaechick_book_genres() {
+
+	$labels = array(
+		'name'					=> _x( 'Generas', 'Taxonomy plural name', 'text-domain' ),
+		'singular_name'			=> _x( 'Genre', 'Taxonomy singular name', 'text-domain' ),
+		'search_items'			=> __( 'Search Generas', 'text-domain' ),
+		'popular_items'			=> __( 'Popular Generas', 'text-domain' ),
+		'all_items'				=> __( 'All Generas', 'text-domain' ),
+		'parent_item'			=> __( 'Parent Genre', 'text-domain' ),
+		'parent_item_colon'		=> __( 'Parent Genre', 'text-domain' ),
+		'edit_item'				=> __( 'Edit Genre', 'text-domain' ),
+		'update_item'			=> __( 'Update Genre', 'text-domain' ),
+		'add_new_item'			=> __( 'Add New Genre', 'text-domain' ),
+		'new_item_name'			=> __( 'New Genre Name', 'text-domain' ),
+		'add_or_remove_items'	=> __( 'Add or remove Generas', 'text-domain' ),
+		'choose_from_most_used'	=> __( 'Choose from most used text-domain', 'text-domain' ),
+		'menu_name'				=> __( 'Genre', 'text-domain' ),
+	);
+
+	$args = array(
+		'labels'            => $labels,
+		'public'            => true,
+		'show_in_nav_menus' => false,
+		'show_admin_column' => false,
+		'hierarchical'      => true,
+		'show_tagcloud'     => false,
+		'show_ui'           => true,
+		'query_var'         => true,
+		'rewrite'           => false,
+		'query_var'         => true,
+		'capabilities'      => array(),
+	);
+
+	register_taxonomy( 'genre', array( 'books' ), $args );
+}
+
+add_action( 'init', 'jaechick_book_genres' );
+
+//register_taxonomy_for_object_type( 'genere', 'books' );
+
+/**
 * Registers a new post type
 * @uses $wp_post_types Inserts new post type object into the list
 *
@@ -45,8 +96,7 @@ function jaechick_books() {
 		'rewrite'             => true,
 		'capability_type'     => 'post',
 		'supports'            => array(
-			'title', 'editor','custom-fields', 'page-attributes'
-			)
+			'title', 'editor')
 	);
 
 	register_post_type( 'books', $args );
