@@ -16,6 +16,7 @@
 				<th>Title</th>
 				<th>Author</th>
 				<th>Genre</th>
+				<th>Date Read</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -24,6 +25,7 @@
 				<td><?php the_title(); ?></td>
 				<td><?php the_terms( $post->ID, 'author' ); ?></td>
 				<td><?php the_terms( $post->ID, 'genre' ); ?></td>
+				<td><?php the_time( 'M j' ); ?></td>
 			</tr>
 		<?php endwhile; wp_reset_postdata(); ?>
 		</tbody>
