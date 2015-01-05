@@ -14,18 +14,18 @@
 function jaechick_book_genres() {
 
 	$labels = array(
-		'name'					=> _x( 'Generas', 'Taxonomy plural name', 'text-domain' ),
+		'name'					=> _x( 'Genres', 'Taxonomy plural name', 'text-domain' ),
 		'singular_name'			=> _x( 'Genre', 'Taxonomy singular name', 'text-domain' ),
-		'search_items'			=> __( 'Search Generas', 'text-domain' ),
-		'popular_items'			=> __( 'Popular Generas', 'text-domain' ),
-		'all_items'				=> __( 'All Generas', 'text-domain' ),
+		'search_items'			=> __( 'Search Genres', 'text-domain' ),
+		'popular_items'			=> __( 'Popular Genres', 'text-domain' ),
+		'all_items'				=> __( 'All Genres', 'text-domain' ),
 		'parent_item'			=> __( 'Parent Genre', 'text-domain' ),
 		'parent_item_colon'		=> __( 'Parent Genre', 'text-domain' ),
 		'edit_item'				=> __( 'Edit Genre', 'text-domain' ),
 		'update_item'			=> __( 'Update Genre', 'text-domain' ),
 		'add_new_item'			=> __( 'Add New Genre', 'text-domain' ),
 		'new_item_name'			=> __( 'New Genre Name', 'text-domain' ),
-		'add_or_remove_items'	=> __( 'Add or remove Generas', 'text-domain' ),
+		'add_or_remove_items'	=> __( 'Add or remove Genres', 'text-domain' ),
 		'choose_from_most_used'	=> __( 'Choose from most used text-domain', 'text-domain' ),
 		'menu_name'				=> __( 'Genre', 'text-domain' ),
 	);
