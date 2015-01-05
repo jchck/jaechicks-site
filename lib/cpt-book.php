@@ -34,7 +34,7 @@ function jaechick_book_genres() {
 		'labels'            => $labels,
 		'public'            => true,
 		'show_in_nav_menus' => false,
-		'show_admin_column' => false,
+		'show_admin_column' => true,
 		'hierarchical'      => true,
 		'show_tagcloud'     => false,
 		'show_ui'           => true,

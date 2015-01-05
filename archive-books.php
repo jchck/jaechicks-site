@@ -1,13 +1,12 @@
 <?php get_template_part('templates/page', 'header'); ?>
 
 <?php
-	$books = $wp_query;
-	$wp_query = null;
-	$wp_query = new $WP_Query();
-	$wp_query->query(
-		'posts_per_page=-1'
+	$args = array(
+		'post_type' => array('books'),
+		'posts_per_page' => -1,
 	);
-	while ($wp_query->have_posts()) : $wp_query->the_post();
+	$books_query = new WP_Query( $args );
+
 ?>
 
 <div class="table-responsive">
@@ -20,28 +19,13 @@
 			</tr>
 		</thead>
 		<tbody>
+			<?php while ($books_query->have_posts()) : $books_query->the_post(); ?>
 			<tr>
-				<td>The Tao of Pooh</td>
-				<td>Benjamin Hoff</td>
-				<td>Spirituality</td>
+				<td><?php the_title(); ?></td>
+				<td><?php the_terms( $post->ID, 'author' ); ?></td>
+				<td><?php the_terms( $post->ID, 'genre' ); ?></td>
 			</tr>
-			<tr>
-				<td>The Tao of Pooh</td>
-				<td>Benjamin Hoff</td>
-				<td>Spirituality</td>
-			</tr>
-			<tr>
-				<td>The Tao of Pooh</td>
-				<td>Benjamin Hoff</td>
-				<td>Spirituality</td>
-			</tr>
-			<tr>
-				<td>The Tao of Pooh</td>
-				<td>Benjamin Hoff</td>
-				<td>Spirituality</td>
-			</tr>
+		<?php endwhile; wp_reset_postdata(); ?>
 		</tbody>
 	</table>
 </div>
-
-<?php endwhile; wp_reset_query(); ?>
