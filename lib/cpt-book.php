@@ -48,18 +48,9 @@ function jaechick_book_genres() {
 }
 
 add_action( 'init', 'jaechick_book_genres' );
-/**
-* A nice little function to echo out these terms without wrapping them in a link
-* @uses $get_terms
-*/
-function jaechick_terms_genre(){
-	$terms_genre = get_terms( 'genre' );
-	if (!empty($terms_genre) && !is_wp_error( $terms_genre )) {
-		foreach ($terms_genre as $term){
-			echo $term->name;
-		}
-	}
-}
+
+register_taxonomy_for_object_type( 'genre', 'books' );
+
 
 /**
  * Create a taxonomy
@@ -109,18 +100,8 @@ function jaechick_book_authors() {
 }
 
 add_action( 'init', 'jaechick_book_authors' );
-/**
-* A nice little function to echo out these terms without wrapping them in a link
-* @uses $get_terms
-*/
-function jaechick_terms_author(){
-	$terms_author = get_terms( 'author' );
-	if (!empty($terms_author) && !is_wp_error( $terms_author )) {
-		foreach ($terms_author as $term){
-			echo $term->name;
-		}
-	}
-}
+
+register_taxonomy_for_object_type( 'author', 'books' );
 
 /**
 * Registers a new post type
@@ -151,8 +132,8 @@ function jaechick_books() {
 		'labels'                   => $labels,
 		'hierarchical'        => false,
 		'description'         => 'description',
-		'taxonomies'          => array(),
-		'public'              => true,
+		'taxonomies'          => array('author', 'genre'),
+		'public'              => false,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
 		'show_in_admin_bar'   => true,
@@ -160,14 +141,13 @@ function jaechick_books() {
 		'menu_icon'           => null,
 		'show_in_nav_menus'   => true,
 		'publicly_queryable'  => true,
-		'exclude_from_search' => false,
+		'exclude_from_search' => true,
 		'has_archive'         => true,
 		'query_var'           => true,
 		'can_export'          => true,
 		'rewrite'             => true,
 		'capability_type'     => 'post',
-		'supports'            => array(
-			'title')
+		'supports'            => array( 'title' )
 	);
 
 	register_post_type( 'books', $args );
