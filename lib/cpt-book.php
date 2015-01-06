@@ -39,7 +39,7 @@ function jaechick_book_genres() {
 		'show_tagcloud'     => false,
 		'show_ui'           => true,
 		'query_var'         => true,
-		'rewrite'           => false,
+		'rewrite'           => true,
 		'query_var'         => true,
 		'capabilities'      => array(),
 	);
@@ -48,6 +48,18 @@ function jaechick_book_genres() {
 }
 
 add_action( 'init', 'jaechick_book_genres' );
+/**
+* A nice little function to echo out these terms without wrapping them in a link
+* @uses $get_terms
+*/
+function jaechick_terms_genre(){
+	$terms_genre = get_terms( 'genre' );
+	if (!empty($terms_genre) && !is_wp_error( $terms_genre )) {
+		foreach ($terms_genre as $term){
+			echo $term->name;
+		}
+	}
+}
 
 /**
  * Create a taxonomy
@@ -97,6 +109,18 @@ function jaechick_book_authors() {
 }
 
 add_action( 'init', 'jaechick_book_authors' );
+/**
+* A nice little function to echo out these terms without wrapping them in a link
+* @uses $get_terms
+*/
+function jaechick_terms_author(){
+	$terms_author = get_terms( 'author' );
+	if (!empty($terms_author) && !is_wp_error( $terms_author )) {
+		foreach ($terms_author as $term){
+			echo $term->name;
+		}
+	}
+}
 
 /**
 * Registers a new post type

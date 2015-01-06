@@ -23,9 +23,9 @@
 			<?php while ($books_query->have_posts()) : $books_query->the_post(); ?>
 			<tr>
 				<td><?php the_title(); ?></td>
-				<td><?php the_terms( $post->ID, 'author' ); ?></td>
-				<td><?php the_terms( $post->ID, 'genre' ); ?></td>
-				<td><?php the_time( 'M j' ); ?></td>
+				<td><?php jaechick_terms_author(); ?></td>
+				<td><?php jaechick_terms_genre(); ?></td>
+				<td><?php the_time( 'M j, y' ); ?></td>
 			</tr>
 		<?php endwhile; wp_reset_postdata(); ?>
 		</tbody>
