@@ -6450,9 +6450,9 @@ div.notebook {
   bottom: 0;
   left: 0;
   opacity: 0;
-  -webkit-transition: all 0.25s ease-in-out;
-       -o-transition: all 0.25s ease-in-out;
-          transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+       -o-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
   background-color: rgba(0, 0, 0, 0.75);
   color: #ffffff;
   z-index: 991;
