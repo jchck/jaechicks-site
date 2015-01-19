@@ -17,13 +17,6 @@
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
-    <div class="row">
-      <div class="project-deets">
-        <h6>Client Name: Justin Chick<h6>
-        <h6>Discipline: CSS3, HTML5, WordPress</h6>
-        
-      </div>
-    </div>
     <footer>
       <?php get_template_part('templates/entry-meta'); ?>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
