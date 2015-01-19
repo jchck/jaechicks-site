@@ -1,4 +1,4 @@
-.post-type-archive-portfolio{
+.post-type-archive-pictures{
 	.content{
 		article{
 			.make-sm-column(6);
@@ -15,7 +15,7 @@
 				}
 
 				h5:before{
-					content: 'The Latest';
+					content: 'My Latest';
 					display: block;
 					margin-bottom: 14px;
 				}	
@@ -24,8 +24,8 @@
 	}
 }
 
-.single-portfolio,
-.post-type-archive-portfolio{
+.single-pictures,
+.post-type-archive-pictures{
 	height: 100%;
 	width: 100%;
 
@@ -57,6 +57,7 @@
 				display: block;
 				width: 100%;
 				border-bottom: none;
+				padding-bottom: 0;
 			}
 
 			img{
@@ -70,7 +71,7 @@
 				bottom: 0;
 				left: 0;
 				opacity: 0;
-				transition: all 0.25s ease-in-out;
+				.ease-in-out(.5s);
 				background-color: rgba(0, 0, 0, 0.75);
 				color: @body-bg;
 				z-index: 991;
@@ -109,9 +110,5 @@
 		.container{
 			border-top: 0;
 		}
-	}
-
-	.project-deets{
-		.make-sm-column(6);
 	}
 }
