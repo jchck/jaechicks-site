@@ -5,7 +5,7 @@
     </header>
     <a href="<?php the_permalink(); ?>">
       <figure>
-        <?php the_post_thumbnail( $size, $attr ); ?>
+        <?php the_post_thumbnail(); ?>
         <figcaption>
           <header>
             <h3><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></h3>

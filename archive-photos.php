@@ -7,7 +7,7 @@
     			<?php if ( has_post_thumbnail() ){ ?>
     			<a href="<?php the_permalink(); ?>">
 	       			<figure>
-	          			<?php the_post_thumbnail( $size, $attr ); ?>
+	          			<?php the_post_thumbnail(); ?>
 	          			<figcaption>
 		            		<header>
 		              			<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
