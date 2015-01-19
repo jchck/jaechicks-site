@@ -6366,6 +6366,10 @@ div.notebook {
   background-image: -o-linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
   background-image: linear-gradient(left, #ffffff 0%, #a5a5a5 50%, #ffffff 100%);
 }
+.pager a:hover {
+  border-bottom: 1px solid #dddddd;
+  color: #515151;
+}
 .post-type-archive-portfolio .content article {
   position: relative;
   min-height: 1px;
