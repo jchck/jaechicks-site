@@ -1,14 +1,15 @@
 <?php while (have_posts()) : the_post(); ?>
+
   <article <?php post_class(); ?>>
     <header class="page-header">
       <h1 class="entry-title"><?php the_title(); ?></h1>
     </header>
-    <a href="<?php the_permalink(); ?>">
+    <a href="<?php post_thumbnail_url() ?>">
       <figure>
         <?php the_post_thumbnail(); ?>
         <figcaption>
           <header>
-            <h3><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></h3>
+            <h3><a><?php the_excerpt(); ?></a></h3>
           </header>
         </figcaption>
       </figure>
