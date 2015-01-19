@@ -6370,80 +6370,80 @@ div.notebook {
   border-bottom: 1px solid #dddddd;
   color: #515151;
 }
-.post-type-archive-portfolio .content article {
+.post-type-archive-photos .content article {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .post-type-archive-portfolio .content article {
+  .post-type-archive-photos .content article {
     float: left;
     width: 50%;
   }
 }
-.post-type-archive-portfolio .content article h2 {
+.post-type-archive-photos .content article h2 {
   font-size: 25px;
 }
-.post-type-archive-portfolio .content article.first {
+.post-type-archive-photos .content article.first {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .post-type-archive-portfolio .content article.first {
+  .post-type-archive-photos .content article.first {
     float: left;
     width: 100%;
   }
 }
-.post-type-archive-portfolio .content article.first h2 {
+.post-type-archive-photos .content article.first h2 {
   font-size: 43px;
 }
-.post-type-archive-portfolio .content article.first h5:before {
+.post-type-archive-photos .content article.first h5:before {
   content: 'The Latest';
   display: block;
   margin-bottom: 14px;
 }
-.single-portfolio,
-.post-type-archive-portfolio {
+.single-photos,
+.post-type-archive-photos {
   height: 100%;
   width: 100%;
 }
-.single-portfolio .navbar-collapse,
-.post-type-archive-portfolio .navbar-collapse {
+.single-photos .navbar-collapse,
+.post-type-archive-photos .navbar-collapse {
   border: none;
 }
-.single-portfolio .content article,
-.post-type-archive-portfolio .content article {
+.single-photos .content article,
+.post-type-archive-photos .content article {
   border-bottom: 0px;
   margin-bottom: 0px;
   padding-left: 5px;
   padding-bottom: 10px;
   padding-right: 5px;
 }
-.single-portfolio .content article.first,
-.post-type-archive-portfolio .content article.first {
+.single-photos .content article.first,
+.post-type-archive-photos .content article.first {
   padding-top: 10px;
   padding-right: 5px;
   padding-left: 5px;
 }
-.single-portfolio .content figure,
-.post-type-archive-portfolio .content figure {
+.single-photos .content figure,
+.post-type-archive-photos .content figure {
   position: relative;
 }
-.single-portfolio .content figure .fluidbox,
-.post-type-archive-portfolio .content figure .fluidbox {
+.single-photos .content figure .fluidbox,
+.post-type-archive-photos .content figure .fluidbox {
   display: block;
   width: 100%;
   border-bottom: none;
 }
-.single-portfolio .content figure img,
-.post-type-archive-portfolio .content figure img {
+.single-photos .content figure img,
+.post-type-archive-photos .content figure img {
   margin-bottom: 0;
 }
-.single-portfolio .content figure figcaption,
-.post-type-archive-portfolio .content figure figcaption {
+.single-photos .content figure figcaption,
+.post-type-archive-photos .content figure figcaption {
   position: absolute;
   top: 0;
   right: 0;
@@ -6458,8 +6458,8 @@ div.notebook {
   z-index: 991;
   pointer-events: none;
 }
-.single-portfolio .content figure figcaption header,
-.post-type-archive-portfolio .content figure figcaption header {
+.single-photos .content figure figcaption header,
+.post-type-archive-photos .content figure figcaption header {
   position: absolute;
   top: 50%;
   text-align: center;
@@ -6470,10 +6470,10 @@ div.notebook {
   padding: 0 18%;
   width: 100%;
 }
-.single-portfolio .content figure figcaption header h2 a,
-.post-type-archive-portfolio .content figure figcaption header h2 a,
-.single-portfolio .content figure figcaption header h3 a,
-.post-type-archive-portfolio .content figure figcaption header h3 a {
+.single-photos .content figure figcaption header h2 a,
+.post-type-archive-photos .content figure figcaption header h2 a,
+.single-photos .content figure figcaption header h3 a,
+.post-type-archive-photos .content figure figcaption header h3 a {
   color: #ffffff;
   -webkit-background-size: 100% 1px;
           background-size: 100% 1px;
@@ -6484,32 +6484,32 @@ div.notebook {
   background-image: -o-linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 100%);
   background-image: linear-gradient(left, #ffffff 0%, #ffffff 50%, #ffffff 100%);
 }
-.single-portfolio .content figure:hover a:not(.fluidbox-opened) + figcaption,
-.post-type-archive-portfolio .content figure:hover a:not(.fluidbox-opened) + figcaption {
+.single-photos .content figure:hover a:not(.fluidbox-opened) + figcaption,
+.post-type-archive-photos .content figure:hover a:not(.fluidbox-opened) + figcaption {
   opacity: 1;
 }
-.single-portfolio .content img,
-.post-type-archive-portfolio .content img {
+.single-photos .content img,
+.post-type-archive-photos .content img {
   margin-left: auto;
   margin-right: auto;
   border-radius: 0;
   width: 100%;
   height: 100%;
 }
-.single-portfolio .content-info .container,
-.post-type-archive-portfolio .content-info .container {
+.single-photos .content-info .container,
+.post-type-archive-photos .content-info .container {
   border-top: 0;
 }
-.single-portfolio .project-deets,
-.post-type-archive-portfolio .project-deets {
+.single-photos .project-deets,
+.post-type-archive-photos .project-deets {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .single-portfolio .project-deets,
-  .post-type-archive-portfolio .project-deets {
+  .single-photos .project-deets,
+  .post-type-archive-photos .project-deets {
     float: left;
     width: 50%;
   }
