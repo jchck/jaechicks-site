@@ -13,18 +13,18 @@
 function jaechick_photos() {
 
 	$labels = array(
-		'name'                => __( 'Photo', 'text-domain' ),
-		'singular_name'       => __( 'Photo', 'text-domain' ),
-		'add_new'             => _x( 'Add New Photo', 'text-domain', 'text-domain' ),
-		'add_new_item'        => __( 'Add New Photo', 'text-domain' ),
-		'edit_item'           => __( 'Edit Photo', 'text-domain' ),
-		'new_item'            => __( 'New Photo', 'text-domain' ),
-		'view_item'           => __( 'View Photo', 'text-domain' ),
-		'search_items'        => __( 'Search Photos', 'text-domain' ),
-		'not_found'           => __( 'No Photos found', 'text-domain' ),
-		'not_found_in_trash'  => __( 'No Photos found in Trash', 'text-domain' ),
-		'parent_item_colon'   => __( 'Parent Photo:', 'text-domain' ),
-		'menu_name'           => __( 'Photos', 'text-domain' ),
+		'name'                => __( 'Pictures', 'text-domain' ),
+		'singular_name'       => __( 'Pictures', 'text-domain' ),
+		'add_new'             => _x( 'Add New Pictures', 'text-domain', 'text-domain' ),
+		'add_new_item'        => __( 'Add New Pictures', 'text-domain' ),
+		'edit_item'           => __( 'Edit Pictures', 'text-domain' ),
+		'new_item'            => __( 'New Pictures', 'text-domain' ),
+		'view_item'           => __( 'View Pictures', 'text-domain' ),
+		'search_items'        => __( 'Search Picturess', 'text-domain' ),
+		'not_found'           => __( 'No Picturess found', 'text-domain' ),
+		'not_found_in_trash'  => __( 'No Picturess found in Trash', 'text-domain' ),
+		'parent_item_colon'   => __( 'Parent Pictures:', 'text-domain' ),
+		'menu_name'           => __( 'Picturess', 'text-domain' ),
 	);
 
 	$args = array(
@@ -52,7 +52,7 @@ function jaechick_photos() {
 			)
 	);
 
-	register_post_type( 'photos', $args );
+	register_post_type( 'pictures', $args );
 }
 
 add_action( 'init', 'jaechick_photos' );
