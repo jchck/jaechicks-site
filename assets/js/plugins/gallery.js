@@ -3,5 +3,5 @@ $('#gallery').justifiedGallery({
 	lastRow: 'nojustify',
 	margins: 1,
 	captions: false,
-	randomize: true
+	randomize: false
 });

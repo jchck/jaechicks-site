@@ -1086,7 +1086,7 @@ backgroundResize();;$('#gallery').justifiedGallery({
 	lastRow: 'nojustify',
 	margins: 1,
 	captions: false,
-	randomize: true
+	randomize: false
 });;// Normal Clicks
 $(function() {
   $('.toggle-nav').click(function() {

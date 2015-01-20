@@ -6637,6 +6637,11 @@ div.notebook {
 .post-type-archive-pictures .content-info .container {
   border-top: 0;
 }
+.justified-gallery a,
+.justified-gallery a:hover,
+.justified-gallery a:focus {
+  border-bottom: none;
+}
 .page-template-template-contact-php .wrap .list-inline {
   text-align: center;
   margin-bottom: 28px;
