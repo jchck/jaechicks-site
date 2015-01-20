@@ -18,6 +18,7 @@ module.exports = function(grunt) {
     //'assets/vendor/bootstrap/js/scrollspy.js',
     //'assets/vendor/bootstrap/js/tab.js',
     //'assets/vendor/bootstrap/js/affix.js',
+    'assets/vendor/Justified-Gallery/src/js/justifiedGallery.js',
     'assets/vendor/fluidbox/jquery.fluidbox.js',
     'assets/js/plugins/*.js',
     'assets/js/_*.js'
