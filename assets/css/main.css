@@ -6256,10 +6256,6 @@ footer {
     margin-left: 0;
   }
 }
-main,
-main .hentry header.page-header {
-  margin-bottom: 90px;
-}
 main:hover h1:before,
 main .hentry header.page-header:hover h1:before,
 main:hover .entry-title:before,
