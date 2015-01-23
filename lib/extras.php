@@ -20,14 +20,3 @@ function roots_wp_title($title) {
   return $title;
 }
 add_filter('wp_title', 'roots_wp_title', 10);
-
-/**
- * Add favicon to head
- * via wp_head
- */
-function jaechick_favicon(){ ?>
-	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri() . '/assets/img/favicon.png'; ?>" sizes="16x16" />
-<?php }
-if (current_theme_supports( 'favicon' )){
-	add_action('wp_head', 'jaechick_favicon' );
-}

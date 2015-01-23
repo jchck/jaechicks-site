@@ -12,7 +12,6 @@ add_theme_support( 'github' );              // Enable switches for things we don
 add_theme_support( 'work-together' );
 add_theme_support( 'twitter-share' );
 add_theme_support( 'facebook-share' );
-add_theme_support( 'favicon' );
 
 /**
  * Configuration values
