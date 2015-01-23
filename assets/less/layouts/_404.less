@@ -1,0 +1,55 @@
+@import url('http://fonts.googleapis.com/css?family=Over+the+Rainbow');
+svg path{
+      fill: white;
+}
+.error404{
+   background-image: url('../../assets/img/say-what.gif');
+   background-size: cover;
+
+   .menu{
+      a{
+         color: white;
+      }
+   }
+
+      .content{
+         max-width: 100%;
+      }
+
+      .page-header{
+         background: none;
+         h1{
+         color: white;
+         text-align: left;
+         font-family: "Over the Rainbow", Georgia, serif;
+         font-size: 52px;
+            &:before,
+            &:after{
+               content: '';
+               margin-right: 0;
+               margin-left: 0;
+            }
+         }
+      }   
+
+      p,
+      .btn{
+         color: @gray-lighter;
+      }
+
+      .btn:hover{
+         color: @red;
+      }
+
+      li{
+         list-style: none;
+      }
+
+      footer{
+         //.navbar-fixed-bottom();
+      }
+
+      footer a:hover{
+         background: transparent;
+      }
+}
