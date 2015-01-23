@@ -5303,7 +5303,6 @@ fieldset[disabled] .gform_button.active {
 }
 .btn-outline:hover {
   border: 2px solid transparent;
-  color: #ff4242;
 }
 .gform_wrapper ul {
   padding-left: 0;
@@ -6463,10 +6462,16 @@ main .hentry header.page-header p:last-child {
     font-size: 17px;
   }
 }
+svg path {
+  fill: white;
+}
 .error404 {
   background-image: url('../../assets/img/say-what.gif');
   -webkit-background-size: cover;
           background-size: cover;
+}
+.error404 .menu a {
+  color: white;
 }
 .error404 .content {
   max-width: 100%;
@@ -6491,7 +6496,7 @@ main .hentry header.page-header p:last-child {
   color: #eeeeee;
 }
 .error404 .btn:hover {
-  color: #383838;
+  color: #ff4242;
 }
 .error404 li {
   list-style: none;
