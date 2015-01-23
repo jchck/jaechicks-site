@@ -1,3 +1,4 @@
+@import url('http://fonts.googleapis.com/css?family=Over+the+Rainbow');
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -5297,6 +5298,13 @@ fieldset[disabled] .gform_button.active {
 		     -o-transition-duration: 0s;
 		        transition-duration: 0s;
 	}
+.btn-outline {
+  border: 2px solid;
+}
+.btn-outline:hover {
+  border: 2px solid transparent;
+  color: #ff4242;
+}
 .gform_wrapper ul {
   padding-left: 0;
   list-style: none;
@@ -6454,6 +6462,42 @@ main .hentry header.page-header p:last-child {
   p {
     font-size: 17px;
   }
+}
+.error404 {
+  background-image: url('../../assets/img/say-what.gif');
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.error404 .content {
+  max-width: 100%;
+}
+.error404 .page-header {
+  background: none;
+}
+.error404 .page-header h1 {
+  color: white;
+  text-align: left;
+  font-family: "Over the Rainbow", Georgia, serif;
+  font-size: 52px;
+}
+.error404 .page-header h1:before,
+.error404 .page-header h1:after {
+  content: '';
+  margin-right: 0;
+  margin-left: 0;
+}
+.error404 p,
+.error404 .btn {
+  color: #eeeeee;
+}
+.error404 .btn:hover {
+  color: #383838;
+}
+.error404 li {
+  list-style: none;
+}
+.error404 footer a:hover {
+  background: transparent;
 }
 .home .bg {
   position: absolute;

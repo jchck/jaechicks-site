@@ -17,7 +17,7 @@ add_theme_support( 'work-together' );
 define('GOOGLE_ANALYTICS_ID', 'UA-12654679-5'); // UA-XXXXX-Y (Note: Universal Analytics only, not Classic Analytics)
 
 if (!defined('WP_ENV')) {
-  define('WP_ENV', 'production');  // scripts.php checks for values 'production' or 'development'
+  define('WP_ENV', 'development');  // scripts.php checks for values 'production' or 'development'
 }
 
 

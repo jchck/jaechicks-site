@@ -7,7 +7,7 @@
         <?php get_template_part( 'templates/outdated', 'browser' ); ?>
 
         <?php
-          if (!is_front_page()) {
+          if ( !is_front_page() ) {
             do_action( 'get_header' );
             get_template_part( 'templates/header', 'simple' );
           } else {
@@ -28,8 +28,11 @@
             </div><!-- /.content -->
           </div><!-- /.wrap -->
         <?php } ?>
-
-        <?php get_template_part('templates/footer'); ?>
+        
+        <?php if (!is_404()) { ?>
+          <?php get_template_part('templates/footer'); ?>
+        <? } ?>
+        
       </div><!-- /.push-wrap -->
   </div><!-- /.site-wrap -->
 </body>
