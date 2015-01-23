@@ -10,16 +10,11 @@ add_theme_support('jquery-cdn');            // Enable to load jQuery from the Go
 //add_theme_support('signup' );               // Enable signup for newsletter calls to action
 add_theme_support( 'github' );              // Enable switches for things we don't want on github
 add_theme_support( 'work-together' );
-add_theme_support( 'twitter-share' );
-add_theme_support( 'facebook-share' );
 
 /**
  * Configuration values
  */
 define('GOOGLE_ANALYTICS_ID', 'UA-12654679-5'); // UA-XXXXX-Y (Note: Universal Analytics only, not Classic Analytics)
-define('AUTHOR_NAME', 'Justin Chick'); // Who's site is this anyways?!
-define('GOOGLE_PLUS', '117097003018884868034'); // Just the string of numbers
-define('TWITTER_NAME', 'jaechick'); // Just your Twitter name, be sure to turn on via add_theme_support above
 
 if (!defined('WP_ENV')) {
   define('WP_ENV', 'production');  // scripts.php checks for values 'production' or 'development'

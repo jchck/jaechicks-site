@@ -25,7 +25,6 @@ $roots_includes = array(
   'lib/cpt-book.php',        // Registers cpt for our books
   'lib/cpt-photo.php',       // Register custom post types for portfolio
   'lib/shortcodes.php',      // Register some shortcodes
-  'lib/meta-share.php',
   'lib/pictures.php',
 );
 
