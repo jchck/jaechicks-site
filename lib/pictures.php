@@ -8,7 +8,7 @@ function post_thumbnail_url(){
 }
 
 function image_figure($html, $id, $caption, $title, $align, $url){
-	$html5 = "<figure id='post-$id media-$id' class='align-$align'>";
+	$html5 = "<figure class='align-$align'>";
 	$html5 .= "<a href='$url'>";
 	$html5 .= "<img src='$url' alt='$title' />";
 	$html5 .= "</a>";

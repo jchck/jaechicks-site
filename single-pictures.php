@@ -14,7 +14,7 @@
         </figcaption>
       </figure>
     </a>
-    <div class="entry-content">
+    <div class="entry-content pics">
       <?php remove_filter( 'the_content', 'wpautop' ); ?>
       <?php the_content(); ?>
     </div>
