@@ -6546,6 +6546,12 @@ div.notebook {
 .post-type-archive-pictures .content-info .container {
   border-top: 0;
 }
+figure.row {
+  margin-bottom: 6px;
+}
+.pics .row {
+  margin-bottom: 6px;
+}
 .pics figure {
   position: relative;
   min-height: 1px;
@@ -6557,6 +6563,10 @@ div.notebook {
     float: left;
     width: 50%;
   }
+}
+.no-gutter > figure {
+  padding-left: 0;
+  padding-right: 0;
 }
 .page-template-template-contact-php .wrap .list-inline {
   text-align: center;

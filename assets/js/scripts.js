@@ -1507,11 +1507,13 @@ $(function () {
     $('.pictures figure a').fluidbox(); // photos in single-pictures.php
 });
 
+// Wrap every other <figure> in <div class="row"> in pic single
 $('.pics > figure').each(function(i){
-	if (i % 2 == 0) {
-		$(this).nextAll().andSelf().slice(0,2).wrapAll('<div class="row"></div>');
-	};
-});;/* ========================================================================
+	if (i % 2 === 0) {
+		$(this).nextAll().andSelf().slice(0,2).wrapAll('<div class="row no-gutter"></div>');
+	}
+});
+;/* ========================================================================
  * DOM-based Routing
  * Based on http://goo.gl/EUTi53 by Paul Irish
  *

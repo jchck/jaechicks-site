@@ -5,7 +5,7 @@
       <h1 class="entry-title"><?php the_title(); ?></h1>
     </header>
     <a href="<?php post_thumbnail_url() ?>">
-      <figure>
+      <figure class="row">
         <?php the_post_thumbnail(); ?>
         <figcaption>
           <header>

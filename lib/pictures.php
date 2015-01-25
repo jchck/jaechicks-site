@@ -13,9 +13,8 @@ function image_figure($html, $id, $caption, $title, $align, $url){
 	$html5 .= "<img src='$url' alt='$title' />";
 	$html5 .= "</a>";
 
-	if ($caption) {
-		$html5 .= "<figcaption>$caption</figcaption>";
-	}
+	$html5 .= "<figcaption>$caption</figcaption>";
+	
 	$html5 .= "</figure>";
 
 	return $html5;
