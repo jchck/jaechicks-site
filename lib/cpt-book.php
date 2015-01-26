@@ -154,3 +154,19 @@ function jaechick_books() {
 }
 
 add_action( 'init', 'jaechick_books' );
+
+/**
+ * Returns taxominy for custom post types sans <a> links
+ * @uses get_the_term_list
+ * 
+ * @param current post ID, most likely will be $post->id
+ * @param registered taxominy to return
+ */
+
+function jaechick_terms( $post_id, $tax ){
+	$author_term = get_the_term_list( $post_id, $tax );
+	if (!empty($author_term)) {
+		echo '',
+		strip_tags($author_term) ,'';
+	}
+}
