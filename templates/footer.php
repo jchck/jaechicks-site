@@ -8,6 +8,7 @@
 	  			<li><a href="https://www.linkedin.com/in/justinchick" target="_blank" title="Justin Chick on LinkedIn"><i class="fa fa-linkedin"></i></a></li>
 	  			<li><a href="http://twitter.com/jaechick" target="_blank" title="Follow Justin Chick on Twitter"><i class="fa fa-twitter"></i></a></li>
 	  			<li><a href="https://github.com/jaechick" target="_blank" title="See Justin Chick code on Github"><i class="fa fa-github"></i></a></li>
+	  			<li><a href="http://www.last.fm/user/Jaechick" target="_blank" title="Listen to tunes with Justin Chick"><i class="fa fa-lastfm"></i></a></li>
 	  			<li><a href="https://medium.com/@jaechick" target="_blank" title="Read with Justin Chick on Medium"><i class="fa fa-medium"></i></a></li>
 	  		</ul>
 		  		<?php if (current_theme_supports('signup' )) { ?>
