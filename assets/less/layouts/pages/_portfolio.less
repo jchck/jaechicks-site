@@ -82,7 +82,7 @@
 						top: 50%;
 						text-align: center;
 						transform: translateY(-50%);
-						padding: 0 18%;
+						padding: 0 15%;
 						width: 100%;
 
 							h2 a,
@@ -112,11 +112,19 @@
 		}
 	}
 }
-
-.justified-gallery{
-	a,
-	a:hover,
-	a:focus{
-		border-bottom: none;
+figure.row{
+	margin-bottom: 6px;
+}
+.pics{
+	.row{
+		margin-bottom: 6px;
 	}
+	figure{
+		.make-sm-column(6);
+	}
+}
+
+.no-gutter > figure{
+	padding-left: 0;
+	padding-right: 0;
 }
