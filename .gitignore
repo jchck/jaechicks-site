@@ -15,3 +15,4 @@ assets/manifest.json
 .DS_Store
 # assets/img/jaechick-logo.png
 # assets/img/logo.svg
+/vendor/

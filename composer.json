@@ -1,0 +1,20 @@
+{
+    "name": "jaechick/my-site",
+    "description": "jaechick's fresh wordpress site bustin out with awesome",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jaechick",
+            "email": "hey@justinchick.com"
+        }
+    ],
+    "require": {
+        "mnsami/composer-custom-directory-installer": "~1.0",
+        "valendesigns/option-tree": "~2.4"
+    },
+    "extra":{
+        "installer-paths":{
+            "./option-tree/": ["valendesigns/option-tree"]
+        }
+    }
+}
