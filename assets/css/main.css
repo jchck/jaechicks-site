@@ -5100,64 +5100,126 @@ fieldset[disabled] .gform_button.active {
 .fa-meanpath:before {
   content: "\f20c";
 }
-.fluidbox {
-	outline: none;
+@-webkit-keyframes fluidboxLoading {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotateX(0) rotateY(0);
+            transform: translate(-50%, -50%) rotateX(0) rotateY(0);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotateX(-180deg) rotateY(0);
+            transform: translate(-50%, -50%) rotateX(-180deg) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotateX(-180deg) rotateY(-180deg);
+            transform: translate(-50%, -50%) rotateX(-180deg) rotateY(-180deg);
+  }
 }
-.hidden {
-	display: none;
+@-o-keyframes fluidboxLoading {
+  0% {
+    transform: translate(-50%, -50%) rotateX(0) rotateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotateX(-180deg) rotateY(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+@keyframes fluidboxLoading {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotateX(0) rotateY(0);
+            transform: translate(-50%, -50%) rotateX(0) rotateY(0);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotateX(-180deg) rotateY(0);
+            transform: translate(-50%, -50%) rotateX(-180deg) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotateX(-180deg) rotateY(-180deg);
+            transform: translate(-50%, -50%) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+.fluidbox {
+  outline: none;
 }
 .fluidbox-overlay {
-	background-color: rgba(255,255,255,.85);
-	cursor: pointer;
-	cursor: -webkit-zoom-out;
-	opacity: 0;
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	-webkit-transition: all .25s ease-in-out;
-	     -o-transition: all .25s ease-in-out;
-	        transition: all .25s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* Transition time for overlay is halved to ensure that flickering doesn't happen */
+  -webkit-transition: all 0.125s ease-in-out 0.125s;
+       -o-transition: all 0.125s ease-in-out 0.125s;
+          transition: all 0.125s ease-in-out 0.125s;
 }
 .fluidbox-wrap {
-	background-position: center center;
-	-webkit-background-size: cover;
-	        background-size: cover;
-	margin: 0 auto;
-	position: relative;
-	-webkit-transition: all .25s ease-in-out;
-	     -o-transition: all .25s ease-in-out;
-	        transition: all .25s ease-in-out;
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+       -o-transition: all 0.25s ease-in-out;
+          transition: all 0.25s ease-in-out;
+  /* To prevent flickering, we delay the showing of the image */
+}
+.fluidbox-closed .fluidbox-wrap img {
+  -webkit-transition: opacity 0 ease-in-out 0.25s;
+       -o-transition: opacity 0 ease-in-out 0.25s;
+          transition: opacity 0 ease-in-out 0.25s;
 }
 .fluidbox-ghost {
-	-webkit-background-size: cover;
-	        background-size: cover;
-	background-position: center center;
-	position: absolute;
-	-webkit-transition: all .25s ease-in-out;
-	     -o-transition: all .25s ease-in-out;
-	        transition: all .25s ease-in-out;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  background-position: center center;
+  position: absolute;
+  -webkit-transition-property: opacity, -webkit-transform;
+  -o-transition-property: opacity, -o-transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 0, 0.25s;
+       -o-transition-duration: 0, 0.25s;
+          transition-duration: 0, 0.25s;
+  -webkit-transition-delay: 0.25s, 0;
+       -o-transition-delay: 0.25s, 0;
+          transition-delay: 0.25s, 0;
 }
-	.fluidbox-closed .fluidbox-ghost {
-		-webkit-transition-property: top, left, opacity, -webkit-transform;
-		-o-transition-property: top, left, opacity, -o-transform;
-		transition-property: top, left, opacity, transform;
-		-webkit-transition-delay: 0, 0, .25s, 0;
-		     -o-transition-delay: 0, 0, .25s, 0;
-		        transition-delay: 0, 0, .25s, 0;
-	}
-	.fluidbox-closed .fluidbox-wrap img {
-		-webkit-transition-property: opacity;
-		     -o-transition-property: opacity;
-		        transition-property: opacity;
-		-webkit-transition-delay: .25s;
-		     -o-transition-delay: .25s;
-		        transition-delay: .25s;
-		-webkit-transition-duration: 0s;
-		     -o-transition-duration: 0s;
-		        transition-duration: 0s;
-	}
+.fluidbox-ghost:before {
+  /* You can replace this with any color you want, or even a loading gif if desired */
+  background-color: rgba(255, 255, 255, 0.85);
+  content: '';
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.25s ease-in-out;
+       -o-transition: all 0.25s ease-in-out;
+          transition: all 0.25s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  padding-bottom: 20%;
+  /* Delay disapparing of loader for graceful transition */
+  -webkit-transition-delay: 0.125s;
+       -o-transition-delay: 0.125s;
+          transition-delay: 0.125s;
+}
+.fluidbox-loading .fluidbox-ghost:before {
+  -webkit-animation: fluidboxLoading 1s infinite;
+       -o-animation: fluidboxLoading 1s infinite;
+          animation: fluidboxLoading 1s infinite;
+  opacity: 1;
+}
+.fluidbox-opened .fluidbox-ghost {
+  -webkit-transition-delay: 0, 0;
+       -o-transition-delay: 0, 0;
+          transition-delay: 0, 0;
+}
 .btn-outline {
   border: 2px solid;
 }
@@ -6513,7 +6575,7 @@ div.notebook {
       -ms-transform: translateY(-50%);
        -o-transform: translateY(-50%);
           transform: translateY(-50%);
-  padding: 0 18%;
+  padding: 0 15%;
   width: 100%;
 }
 .single-pictures .content figure figcaption header h2 a,
