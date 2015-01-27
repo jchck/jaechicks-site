@@ -19,6 +19,7 @@
     "respond": "1.4.2",
     "fluidbox": "1.4.3",
     "font-awesome": "4.3.0",
-    "oc-styles": "*"
+    "oc-styles": "*",
+    "fitvids": "~1.1.0"
   }
 }

@@ -1,7 +1,8 @@
 <?php while (have_posts()) : the_post(); ?>
   <?php
   if (! is_front_page()) {
-  	get_template_part('templates/page', 'header');
-  	get_template_part('templates/content', 'page');
+  	get_template_part( 'templates/page', 'header' );
+  	get_template_part( 'templates/video', 'metabox' );
+  	get_template_part( 'templates/content', 'page' );
   	} ?>
 <?php endwhile; ?>

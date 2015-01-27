@@ -19,6 +19,7 @@ module.exports = function(grunt) {
     //'assets/vendor/bootstrap/js/tab.js',
     //'assets/vendor/bootstrap/js/affix.js',
     'assets/vendor/fluidbox/jquery.fluidbox.js',
+    'assets/vendor/fitvids/jquery.fitvids.js',
     'assets/js/plugins/*.js',
     'assets/js/_*.js'
   ];

@@ -26,6 +26,8 @@ $roots_includes = array(
   'lib/cpt-photo.php',       // Register custom post types for portfolio
   'lib/shortcodes.php',      // Register some shortcodes
   'lib/pictures.php',
+  'lib/option-tree.php',
+  'lib/metaboxes.php',
 );
 
 foreach ($roots_includes as $file) {

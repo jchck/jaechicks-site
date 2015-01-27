@@ -4,7 +4,10 @@
       <h1 class="entry-title"><?php the_title(); ?></h1>
     </header>
     <div class="entry-content">
-      <?php the_content(); ?>
+      <?php
+        get_template_part( 'templates/video', 'metabox' );
+        the_content(); 
+      ?>
     </div>
     <footer>
       <?php get_template_part('templates/entry-meta'); ?>

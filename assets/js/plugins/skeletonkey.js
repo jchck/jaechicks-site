@@ -12,3 +12,8 @@ $('.pics > figure').each(function(i){
 		$(this).nextAll().andSelf().slice(0,2).wrapAll('<div class="row no-gutter"></div>');
 	}
 });
+
+// FitVids
+$(document).ready(function(){
+	$(".video-wrapper").fitVids();
+});
