@@ -6129,6 +6129,9 @@ footer {
 .ad-space .ad-description .table div {
   vertical-align: middle;
 }
+main {
+  margin-bottom: 30px;
+}
 .hentry .page-header h1:before {
   margin-right: 5px;
 }
